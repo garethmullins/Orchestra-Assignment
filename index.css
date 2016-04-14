@@ -1,0 +1,36 @@
+body {
+    line-height: 1.25;
+    padding: 15px;
+    background-color: #565656;
+}
+
+
+.navBarColor {
+    background-color: aqua;
+    width: 80%;
+    /*height: %;*/
+    /*border: 2px solid black;*/
+    /*padding: 0px;*/
+    /*margin: 30px;*/
+    text-align: end;
+}
+
+
+.copyrightInformationLink {
+    text-align: start;
+}
+
+
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    text-align: right;
+    /*box-string: border-box;*/
+    padding: 0.2em;
+    height: 2em;
+}
+
+
+nav ul li:hover {
+    background: #A8CFB1
+}
