@@ -1,47 +1,189 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Begin head  -->
 <head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-    <link href="index.css" rel="stylesheet">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Barrier Reef Orchestra: Home</title>
+
+<!-- Begin stylesheets -->
+<link rel="stylesheet" href="js/blueberry.css" /><style type="text/css"></style>
+<link rel="stylesheet" href="styles.css" /><style type="text/css"></style>
+<link rel="stylesheet" href="layout.css" /><style type="text/css"></style>
+<!-- End stylesheets -->
+
+<!-- Begin scripts -->
+<script src="js/jquery-2.2.3.min.js"></script>
+<script src="js/jquery.blueberry.js"></script>
+<script>
+$(window).load(function() {
+	$('.blueberry').blueberry();
+});
+</script>
+<!-- End scripts -->
+
 </head>
-<header>
-    <img src="logo.png" alt="Logo">
-    <img src="banner.jpg" alt="Banner">
+<!-- End head  -->
 
-    <nav class="navBarColor">
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="Link">NEWS</a></li>
-            <li><a href="Link">GALLERY</a></li>
-            <li><a href="Link">SUPPORTERS</a></li>
-            <li><a href="Link">PEOPLE</a></li>
-            <li><a href="Link">ABOUT US</a></li>
-        </ul>
-    </nav>
-</header>
+<!-- Begin body -->
 <body>
+<!-- Begin Facebook js code -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- End Facebook js code -->
 
-<h1>Sample Heading</h1>
-<p>
-    lore ipsum dolor sit amet, consectur adipiscing elit. Sed nibh massa, vestibulum ac condimentum sit amet, consectetur id lorem. Numc et diam blanit, molestie dui id, sodales ex. Nums sem lacus, dapibus dignissim ultrices pulveriner, fermentum et leo. Duis poesuere effcitur fermentarm. Nullam aliquet eu urna vitae tempus. Cras aliquet nisl iaculus gravida aliquam. Integar vitae sem in diam egestas agestas. Phasellus inlorem placerat, pharetre lectus in, molestie libero. Cras a tortor mial.
-</p>
+<!-- Begin header -->
+	<header>
+    	<a href="#" id="logo"></a>
+    </header>
+<!-- End header -->
 
-<p>
-    Curebitur pretium nec erant dictum egestas. interdum et malesuada fames ac ante ipsum primis in faucibus. Cras sem sapien, scenlerisque at uliamcorper quis, consectetur et metus. Aliquam consequat, purus aget finbus hendrenit, dolor lacus ultricies tortor, et mollis ex quam ut augue. Aliquam tortor arcu, sagittis auctor lectus ultricies tortor, et mollie ex quam ut augue. Aliquam tortor arcu, sagittis auctor lecus eget, pellentesque mollis ex quam ut augue. alliquam tortor arcu, sagittis auctor lectus eget, pellentesque mollis arcu. Integar sit amet mi sem. Ut fermentum quis elit in lucus. Aenean consectur pulvinar magna, in tempus erar ullamcorper a. Quisque luctus lacus nibh, non semper turpis ultrices eget. Crss nibh ligula, sagittis id dui at,rutrum rutrum lacus. Nulla maximus
-</p>
-
-<footer>
-    <nav class="navBarColor">
-        <ul>
-            <li><a class="copyrightInformationLink" href="Link">Copyright information</a></li>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="Link">SITEMAP</a></li>
-            <li><a href="Link">CONTACT</a></li>
-            <li><a href="index.html">RETURN TO TOP</a></li>
+<!-- Begin navigation bar -->
+<ul class="bro_menu">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">News</a>
+    	<ul>
+            <li><a href="#">Visiting Soloist</a></li>
+            <li><a href="#">Past Events</a></li>
         </ul>
-    </nav>
+    </li>
+    <li><a href="#">Gallery</a></li>
+    <li><a href="#" class="has-sub">Supporters</a>
+        <ul>
+            <li><a href="#">Benefactors</a></li>
+            <li><a href="#">Donations</a></li>
+            <li><a href="#">Sponsors</a></li>
+        </ul>
+    </li>
+    <li><a href="#" class="has-sub">People</a>
+        <ul>
+            <li><a href="#">Special Guests</a></li>
+            <li><a href="#">Life Members</a></li>
+        </ul>
+    </li>
+    <li><a href="#" class="has-sub">About Us</a>
+        <ul>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Committee</a></li>
+            <li><a href="#">Rules</a></li>
+            <li><a href="#">Repertoire</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Contact</a></li>
+</ul>
+<!-- End navigation bar -->
+
+<!-- Begin slider -->
+<div id="doc">
+    <div id="content">
+        <div class="blueberry">
+            <ul class="slides">
+                <li><img src="images/slider1.jpg" /></li>
+                <li><img src="images/slider2.jpg" /></li>
+                <li><img src="images/slider3.jpg" /></li>
+                <li><img src="images/slider4.jpg" /></li>
+            </ul>
+        </div>                
+    </div>
+</div>
+<!-- End slider -->
+
+<div id="intro">
+<p>Fast becoming one of North Queensland’s cultural jewels the Barrier Reef Orchestra this year launches its 16th year of performing orchestral music throughout North Queensland. A community orchestra consisting of skilled musicians of all ages and professions from as far afield as Cairns and Mackay looking to partake in an orchestra.</p>
+</div>
+
+<!-- Begin first section -->
+<section>
+    <img src="images/harp.png" /> <!-- image obtained from iconfinder.com -->
+    <h1>Support Us</h1>
+    <p>Barrier Reef Orchestra relies on the support of Townsville locals and businesses in order to bring our beautiful music to the masses. Find out how to support us here...</p>
+</section>
+<section>
+    <img src="images/horn.png" /> <!-- image obtained from iconfinder.com -->
+    <h1>News</h1>
+    <p>Want to know what’s new and happening? Click here...</p>
+</section>
+<section>
+    <img src="images/violin.png" /> <!-- image obtained from iconfinder.com -->
+    <h1>Gallery</h1>
+    <p>Want to see what photos we have? Click here, have photos you want to share? Find out how here...</p>
+</section>
+<!-- End first section -->
+
+<div class="clear"></div>
+
+<!-- Begin second section -->
+<aside>
+    <h2>Events</h2>
+        <ul class="events">
+            <li><h3>25th Anniversary Celebration Concert: The 1812! - August 2, 2015</h3></li>
+            <li><h3>World Music Concert - September 5, 2015</h3></li>
+            <li><h3>A Musical Feast - November 7, 2015</h3></li>
+            <li><h3>Dreams & Dances - March 8, 2016</h3></li>
+            <li><h3>Queens Gardens Concerts: The 1812 Again! - July 31, 2016</h3></li>
+        </ul>
+</aside>
+<article>
+    <div class="fb-page" data-href="https://www.facebook.com/nqorchestra/" data-tabs="timeline" data-width="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+        <div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/nqorchestra/">
+        <a href="https://www.facebook.com/nqorchestra/">Barrier Reef Orchestra</a></blockquote>
+        </div>
+    </div>
+</article>
+<!-- End second section -->
+
+<div class="clear"></div>
+
+<!-- Begin third section -->    	
+<section>
+    <h1>Sign Up</h1>
+    <img src="images/harp.png" /> <!-- image obtained from iconfinder.com -->
+    <p>Want to get into get in contact, become a member or apply to be a conductor for a night? Click here and find out how.</p>
+</section>
+<section>
+    <h1>People</h1>
+    <img src="images/violin.png" /> <!-- image obtained from iconfinder.com -->
+    <p>Interested about our unique musicians and conductors? Discover their stories here.</p>
+</section>
+<section>
+    <h1>About</h1>
+    <img src="images/horn.png" /> <!-- image obtained from iconfinder.com -->
+    <p>Interested in learning more about our community? Click here.</p>
+</section>
+<!-- End third section -->
+
+<!-- Begin Footer -->
+<footer>
+    <section>
+        <h3><b>Barrier Reef Orchestra</b></h3>
+        <p>The Barrier Reef Orchestra is a product of North Queensland Ensembles Inc.<br/></p>
+    </section>
+    <section>
+        <h3>Connect With Us!</h3>
+        <ul class="social">
+            <li><a href="https://www.facebook.com/nqorchestra/"><img src="images/facebook.png" /></a></li> <!-- image obtained from iconfinder.com -->
+            <li><a href="mailto:bro@email.com?subject=Website%20Enquiry"><img src="images/mail.png" /></a></a></li> <!-- image obtained from iconfinder.com -->
+        </ul>
+    </section>
+    <section>
+        <p>Proudly Sponsored by</p>
+        <img src="images/tcc_logo.jpg" />
+    </section>
 </footer>
+<footer class="second">
+	<p>&copy; CP1406 Team 2. Content used is for educational and training purposes only.</p>
+</footer>
+<!-- End Footer -->
 
 </body>
+<!-- End body -->
+
 </html>
