@@ -53,10 +53,17 @@ img {
 }
 a {
 	text-decoration: none;
+	color: #3c7888;
 }
 a:hover {
 	color: #FFF;
 	text-decoration: underline;
+}
+.anchor{
+  display: block;
+  height: 110px; /*same height as header*/
+  margin-top: -110px; /*same height as header*/
+  visibility: hidden;
 }
 header {
 	background: #94d7e9;
@@ -135,10 +142,10 @@ footer img {
 	margin-bottom: 10px;
 }
 footer p, footer h3 {
-	color: #FFF;
+	color: #3c7888;
 }
 footer p a {
-	color: #FFF;
+	color: #3c7888;
 	text-decoration: none;
 }
 ul.social li {
@@ -189,8 +196,5 @@ ul.bro_menu a {
 
 ul.bro_menu li { list-style: none; white-space:nowrap;}
 
-$('.has-sub').click( function(e) {
-    e.preventDefault();
-    $(this).parent().toggleClass('tap');
-});
+
 /* --- End navigation menu styles --- */

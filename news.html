@@ -21,6 +21,10 @@
 $(window).load(function() {
 	$('.blueberry').blueberry();
 });
+$('.has-sub').click( function(e) {
+    e.preventDefault();
+    $(this).parent().toggleClass('tap');
+});
 </script>
 <!-- End scripts -->
 
@@ -39,7 +43,7 @@ $(window).load(function() {
 <!-- Begin navigation bar -->
 <ul class="bro_menu">
     <li><a href="index.html">Home</a></li>
-    <li><a href="news.html">News</a>
+    <li><a href="#">News</a>
     	<ul>
             <li><a href="news.html">Visiting Soloist</a></li>
             <li><a href="news.html#past_events">Past Events</a></li>
@@ -70,14 +74,22 @@ $(window).load(function() {
     </li>
     <li><a href="#">Contact</a></li>
 </ul>
+
 <!-- End navigation bar -->
 
+<!-- Begin section one -->
 <div id="main">
 <h1>Visiting Soloist</h1>
-<p>This might be a good spot to explain why the BRO have a visiting soloist.</p>
-<br />
-<br />
+<p>In conjunction with the <a href="http://www.acvc.com.au">Australian Concert & Vocal Competition</a>, Barrier Reef Orchestra are pleased to present the winning vocalist each year with the prestigious opportunity to perform with our musicians as part of their prize.</p>
 
+<p>This helps budding vocalists from anywhere in the country to build their brand within Australia's classical music scene and is a wonderful accomplishment to achieve for the artist, as well as a special addition for the orchestra.</p>
+<br />
+<br />
+<!-- End section one -->
+
+<div class="clear"></div>
+
+<!-- Begin section two -->
 <aside><img src="images/bronwyn_douglass.jpg" /></aside>
 
 <h3>Bronwyn Douglass to perform at T150 Anniversary Concert Townsville Civic Theatre, 2nd April 7.30 pm</h3>
@@ -87,19 +99,15 @@ $(window).load(function() {
 <p>Bronwyn graduated with a Masters in Operatic Performance from the Queensland Conservatorium in 2014, also receiving an award for Academic Excellence and the Wagner Society Encouragement Award. She attended the Lisa Gasteen National Opera School from 2013 – 2015 as well as undertaking the Mediterranean Opera Studio Programme held in Caltigirone in Sicily. </p>
 
 <p>Bronwyn has performed many operatic roles in Queensland and New South Wales. She has also performed as the Alto Soloist for the Queeensland Symphony Orchestra for their 2015 Performance of the Messiah and in Vivaldi’s Gloria for the 4MBS Festival of classics in 2014. </p>
-<a name="past_events"></a>
+
 <p>Bronwyn has received many awards, a Finalist in the Sun aria in 2015,winner of the Royal Melbourne Philharmonic Aria in 2015. She has also been placed in several competitions. In 2015 she was awarded the Champion of Champions Vocal Soloist at the North Queensland Eisteddfod and that year also won the Open Vocal Solo at the Australian Concerto and Vocal Competition. As part of that award she is here with us at the T150 Concert to sing with the Barrier Reef Orchestra. </p>
-
 </div>
-
-
-
-<!-- End first section -->
+<!-- End section two -->
 
 <div class="clear"></div>
-<a name="past_events"></a>
-<!-- Begin second section -->
 
+<!-- Begin section three -->
+<span class="anchor" id="past_events"></span>
 <h1>Past Events</h1>
 <aside>
         <ul class="events">
@@ -116,11 +124,12 @@ $(window).load(function() {
 <article>
     <img src="images/violin.png" /> <!-- image obtained from iconfinder.com -->
 </article>
-<!-- End second section -->
+<!-- End section three -->
 
 <div class="clear"></div>
 
-
+<!-- Begin Section four -->
+<span class="anchor" id="presidents_report"></span>
 <div id="main">
 <h1>President's Report
 for 2015 AGM North Queensland Ensembles Inc.</h1>
@@ -145,8 +154,8 @@ for 2015 AGM North Queensland Ensembles Inc.</h1>
 <p>The Barrier Reef Orchestra has taken the opportunity to be directly involved with the development of the TPAC proposal. I see it as necessary support to all of the arts organisations to promote the need for more performance spaces in Townsville and I would urge you all to visit the website and help spread the word. Simon has injected himself into this project with the usual eye for detail while keeping appraised of the macro developments in Townsville. Thanks Simon for your energy and incisive views on this important project.</p> 
 
 <p>The 15th anniversary year of BRO has been marked by several approaches to the Orchestra to perform in support of other arts organisations. I take this as a sign of confidence others see in our Orchestra and acceptance of the Barrier Reef Orchestra as Townsville’s resident cultural cornerstone to orchestral music. A fitting milestone for the 15th year of the Barrier Reef Orchestra.</p>
-
 </div>
+<!-- End section four -->
 
 <div class="clear"></div>
 
@@ -165,11 +174,11 @@ for 2015 AGM North Queensland Ensembles Inc.</h1>
     </section>
     <section>
         <p>Proudly Sponsored by</p>
-        <img src="images/tcc_logo.jpg" />
+        <a href="https://www.townsville.qld.gov.au/"><img src="images/tcc_logo.jpg" /></a>
     </section>
 </footer>
 <footer class="second">
-	<p>&copy; CP1406 Team 2. Content used is for educational and training purposes only.</p>
+	<p><h5>&copy; CP1406 Team 2. Content used is for educational and training purposes only.</h5></p>
 </footer>
 <!-- End Footer -->
 

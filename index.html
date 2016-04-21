@@ -21,6 +21,10 @@
 $(window).load(function() {
 	$('.blueberry').blueberry();
 });
+$('.has-sub').click( function(e) {
+    e.preventDefault();
+    $(this).parent().toggleClass('tap');
+});
 </script>
 <!-- End scripts -->
 
@@ -48,7 +52,7 @@ $(window).load(function() {
 
 <!-- Begin navigation bar -->
 <ul class="bro_menu">
-    <li><a href="index.html">Home</a></li>
+    <li><a href="#">Home</a></li>
     <li><a href="news.html">News</a>
     	<ul>
             <li><a href="news.html">Visiting Soloist</a></li>
@@ -108,9 +112,9 @@ $(window).load(function() {
     <p>Barrier Reef Orchestra relies on the support of Townsville locals and businesses in order to bring our beautiful music to the masses. Find out how to support us here...</p>
 </section>
 <section>
-    <img src="images/horn.png" /> <!-- image obtained from iconfinder.com -->
-    <h1>News</h1>
-    <p>Want to know what’s new and happening? Click here...</p>
+        <img src="images/horn.png" /> <!-- image obtained from iconfinder.com -->
+        <h1>News</h1>
+        <p>Want to know what’s new and happening? <a href="news.html">Click here...</a></p>
 </section>
 <section>
     <img src="images/violin.png" /> <!-- image obtained from iconfinder.com -->
@@ -175,11 +179,11 @@ $(window).load(function() {
     </section>
     <section>
         <p>Proudly Sponsored by</p>
-        <img src="images/tcc_logo.jpg" />
+        <a href="https://www.townsville.qld.gov.au/"><img src="images/tcc_logo.jpg" /></a>
     </section>
 </footer>
 <footer class="second">
-	<p>&copy; CP1406 Team 2. Content used is for educational and training purposes only.</p>
+	<p><h5>&copy; CP1406 Team 2. Content used is for educational and training purposes only.</h5></p>
 </footer>
 <!-- End Footer -->
 
