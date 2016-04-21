@@ -99,7 +99,10 @@
 		display: block;  
 		}
 	ul.bro_menu { 
-		margin-top: 110px; 
+		position: fixed; 
+	}
+	body {
+		padding-top: 110px;
 	}
 }
 /* --- End tablet and medium screen layouts --- */
@@ -116,7 +119,10 @@
 		display: block;  
 	}
 	ul.bro_menu { 
-		margin-top: 110px; 
+		position: fixed; 
+	}
+	body {
+		padding-top: 110px;
 	}
 }
 /* --- End computer and large screen layouts --- */
