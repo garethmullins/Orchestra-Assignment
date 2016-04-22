@@ -21,10 +21,6 @@
 $(window).load(function() {
 	$('.blueberry').blueberry();
 });
-$('.has-sub').click( function(e) {
-    e.preventDefault();
-    $(this).parent().toggleClass('tap');
-});
 </script>
 <!-- End scripts -->
 
@@ -41,9 +37,11 @@ $('.has-sub').click( function(e) {
 <!-- End header -->
 
 <!-- Begin navigation bar -->
-<ul class="bro_menu">
+<nav>
+<span class="nav-btn"></span>
+<ul class="nav">
     <li><a href="index.html">Home</a></li>
-    <li><a href="#">News</a>
+    <li><a class="has-sub">News</a>
     	<ul>
             <li><a href="news.html">Visiting Soloist</a></li>
             <li><a href="news.html#past_events">Past Events</a></li>
@@ -51,20 +49,20 @@ $('.has-sub').click( function(e) {
         </ul>
     </li>
     <li><a href="#">Gallery</a></li>
-    <li><a href="#" class="has-sub">Supporters</a>
+    <li><a class="has-sub">Supporters</a>
         <ul>
             <li><a href="#">Benefactors</a></li>
             <li><a href="#">Donations</a></li>
             <li><a href="#">Sponsors</a></li>
         </ul>
     </li>
-    <li><a href="#" class="has-sub">People</a>
+    <li><a class="has-sub">People</a>
         <ul>
             <li><a href="#">Special Guests</a></li>
             <li><a href="#">Life Members</a></li>
         </ul>
     </li>
-    <li><a href="#" class="has-sub">About Us</a>
+    <li><a class="has-sub">About Us</a>
         <ul>
             <li><a href="#">History</a></li>
             <li><a href="#">Committee</a></li>
@@ -74,7 +72,21 @@ $('.has-sub').click( function(e) {
     </li>
     <li><a href="#">Contact</a></li>
 </ul>
-
+</nav>
+<script>
+$('.has-sub').click( function(e) {
+    e.preventDefault();
+    $(this).parent().toggleClass('tap');
+});
+$('span.nav-btn').click(function () {
+	$('ul.nav').toggle();
+});
+$(window).resize(function () {
+	if ( $(window).width() > 478 ) {
+		$('ul.nav').removeAttr('style');
+	}
+});
+</script>
 <!-- End navigation bar -->
 
 <!-- Begin section one -->
@@ -139,7 +151,7 @@ for 2015 AGM North Queensland Ensembles Inc.</h1>
 
 <p>Masterworks conducted by Mark Sheills and featuring the 2013 Australian Concerto and Vocal Competition winner was performed in September with a follow up performance in the Burdekin. Sadly the Burdekin concert was not well attended despite the best efforts in advertising and extra signage.</p>
 
-<p>Last Night of the Proms was performed in November and conducted by Richard McIntyre. As expected, the audience join in with the antics.</p>
+<p>Last Night of the Proms was performed in November and conducted by Richard McIntyre. As expected the audience join in with the antics.</p>
 
 <p>The new year saw the successful season launch at the Pier Restaurant and featured our new harp much to the enjoyment of those present. The Mayor of Townsville, Councillor Jenny Hill, officially launched the 2015 season and spoke of the importance of the Barrier Reef Orchestra to Townsville. Not long after that was Sounds of Romance conducted by Raymond Yong. The issue of parking problems were extreme and the matter was taken up with Council. Hopefully there will not be a repeat performance.</p> 
 

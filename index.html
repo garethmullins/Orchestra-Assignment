@@ -21,10 +21,6 @@
 $(window).load(function() {
 	$('.blueberry').blueberry();
 });
-$('.has-sub').click( function(e) {
-    e.preventDefault();
-    $(this).parent().toggleClass('tap');
-});
 </script>
 <!-- End scripts -->
 
@@ -51,9 +47,11 @@ $('.has-sub').click( function(e) {
 <!-- End header -->
 
 <!-- Begin navigation bar -->
-<ul class="bro_menu">
+<nav>
+<span class="nav-btn"></span>
+<ul class="nav">
     <li><a href="#">Home</a></li>
-    <li><a href="news.html">News</a>
+    <li><a class="has-sub">News</a>
     	<ul>
             <li><a href="news.html">Visiting Soloist</a></li>
             <li><a href="news.html#past_events">Past Events</a></li>
@@ -61,20 +59,20 @@ $('.has-sub').click( function(e) {
         </ul>
     </li>
     <li><a href="#">Gallery</a></li>
-    <li><a href="#" class="has-sub">Supporters</a>
+    <li><a class="has-sub">Supporters</a>
         <ul>
             <li><a href="#">Benefactors</a></li>
             <li><a href="#">Donations</a></li>
             <li><a href="#">Sponsors</a></li>
         </ul>
     </li>
-    <li><a href="#" class="has-sub">People</a>
+    <li><a class="has-sub">People</a>
         <ul>
             <li><a href="#">Special Guests</a></li>
             <li><a href="#">Life Members</a></li>
         </ul>
     </li>
-    <li><a href="#" class="has-sub">About Us</a>
+    <li><a class="has-sub">About Us</a>
         <ul>
             <li><a href="#">History</a></li>
             <li><a href="#">Committee</a></li>
@@ -84,6 +82,21 @@ $('.has-sub').click( function(e) {
     </li>
     <li><a href="#">Contact</a></li>
 </ul>
+</nav>
+<script>
+$('.has-sub').click( function(e) {
+    e.preventDefault();
+    $(this).parent().toggleClass('tap');
+});
+$('span.nav-btn').click(function () {
+	$('ul.nav').toggle();
+});
+$(window).resize(function () {
+	if ( $(window).width() > 478 ) {
+		$('ul.nav').removeAttr('style');
+	}
+});
+</script>
 <!-- End navigation bar -->
 
 <!-- Begin slider -->
@@ -109,7 +122,7 @@ $('.has-sub').click( function(e) {
 <section>
     <img src="images/harp.png" /> <!-- image obtained from iconfinder.com -->
     <h1>Support Us</h1>
-    <p>Barrier Reef Orchestra relies on the support of Townsville locals and businesses in order to bring our beautiful music to the masses. Find out how to support us <a href="SupportUs.html">Click here...</a></p>
+    <p>Barrier Reef Orchestra relies on the support of Townsville locals and businesses in order to bring our beautiful music to the masses. Find out how to support us here...</p>
 </section>
 <section>
         <img src="images/horn.png" /> <!-- image obtained from iconfinder.com -->
@@ -119,7 +132,7 @@ $('.has-sub').click( function(e) {
 <section>
     <img src="images/violin.png" /> <!-- image obtained from iconfinder.com -->
     <h1>Gallery</h1>
-    <p>Want to see what photos we have? Click here, have photos you want to share? Find out how <a href="Gallery.html">Click here...</a></p>
+    <p>Want to see what photos we have? Click here, have photos you want to share? Find out how here...</p>
 </section>
 <!-- End first section -->
 
@@ -150,17 +163,17 @@ $('.has-sub').click( function(e) {
 <section>
     <h1>Sign Up</h1>
     <img src="images/harp.png" /> <!-- image obtained from iconfinder.com -->
-    <p>Want to get into get in contact, become a member or apply to be a conductor for a night? <a href="SignUp.html">Click here and find out how.</a></p>
+    <p>Want to get into get in contact, become a member or apply to be a conductor for a night? Click here and find out how.</p>
 </section>
 <section>
     <h1>People</h1>
     <img src="images/violin.png" /> <!-- image obtained from iconfinder.com -->
-    <p>Interested about our unique musicians and conductors? <a href="People.html">Discover their stories here.</a></p>
+    <p>Interested about our unique musicians and conductors? Discover their stories here.</p>
 </section>
 <section>
     <h1>About</h1>
     <img src="images/horn.png" /> <!-- image obtained from iconfinder.com -->
-    <p>Interested in learning more about our community? <a href="About.html">Click here.</a></p>
+    <p>Interested in learning more about our community? Click here.</p>
 </section>
 <!-- End third section -->
 

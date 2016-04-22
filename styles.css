@@ -23,19 +23,19 @@ h1 {
 	font-size: 180%;
 	line-height: 120%;
 	padding: 5% 0;
-	font-family:"Poiret One", Geneva, sans-serif
+	font-family:"Poiret One", Geneva, sans-serif;
 }
 h2 {
 	text-align: center;
 	line-height: 280%;
 	padding-left: 2%;
-	font-family:"Poiret One", Geneva, sans-serif
+	font-family:"Poiret One", Geneva, sans-serif;
 }
 h3 {
 	text-align: center;
 	line-height: 110%;
 	padding: 5%;
-	font-family:"Poiret One", Geneva, sans-serif
+	font-family:"Poiret One", Geneva, sans-serif;
 }
 h4 {
 	text-align: center;
@@ -164,7 +164,7 @@ footer.second {
 /* --- End ALL styles --- */
 
 /* --- Begin navigation menu styles --- */
-ul.bro_menu {  
+.nav {  
     background: #94d7e9;
 	height: 30px;
     width: 100%;
@@ -173,20 +173,20 @@ ul.bro_menu {
 	z-index: 300;
 }
 
-ul.bro_menu > li { 
+.nav > li { 
     float: left; 
     position: relative;
-	z-index: 200;  
+	z-index: 200;
 }
 
-ul.bro_menu ul {
+.nav ul {
     background: #94d7e9; 
     display: none; 
     position: absolute;
     left: 0; top: 100%;
 }
 
-ul.bro_menu a { 
+.nav a { 
     cursor: pointer; 
     display: block; 
 	color: #2c2d2b; 
@@ -194,7 +194,11 @@ ul.bro_menu a {
     padding: 0 10px; 
 }
 
-ul.bro_menu li { list-style: none; white-space:nowrap;}
+.nav li { list-style: none; white-space:nowrap;}
 
+.nav a:hover {
+	color: #FFF;
+	text-decoration: none;
+}
 
 /* --- End navigation menu styles --- */

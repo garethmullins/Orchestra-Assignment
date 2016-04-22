@@ -5,6 +5,7 @@
 @media screen and (max-width: 478px) {
 	body {
 		position: absolute;
+		padding-top: 70px;
 	}
 	section {
 		float: left;
@@ -27,7 +28,8 @@
 		text-align: center;
 	}
 	header { 
-		height: 70px; 
+		height: 70px;
+		position: fixed; 
 	}
 	#logo {
 		margin: 2px 20px 2px 0;
@@ -37,31 +39,47 @@
 		background: url(images/logo_mini.png) no-repeat center;
 		background-size: contain;
 	}
-    ul.bro_menu {  
+    .nav {  
 		height: auto; 
-		margin-top:70px;
+		display: none;
+		position: fixed;
+		margin-top: 15px;
 	}
-    ul.bro_menu > li {  
+    .nav > li {  
 		float: none; 
 		width: 100%; 
 	}
-    ul.bro_menu a { 
-		line-height: 40px; 
+    .nav a { 
+		line-height: 30px; 
 	}
-    ul.bro_menu ul { 
+    .nav ul { 
 		position: relative; 
 	}
-    ul.bro_menu li.tap { 
-		background: #555; 
+    .nav li.tap { 
+		background: #458a9c; 
 	}
-    ul.bro_menu li.tap ul { 
+    .nav li.tap ul { 
 		display: block;  
 	}
-	ul.bro_menu li:hover { 
-	background: #458a9c; 
+	.nav li:hover { 
+		background: #458a9c;
 	}
-	ul.bro_menu li:hover ul { 
-	display: block; 
+	.nav li ul li {
+		font-size: 80%;
+	}
+	.nav-btn {
+		display: block;
+		background-color: #458a9c;
+		color: #FFF;
+		font-family:"Poiret One", Geneva, sans-serif;
+		text-align: center;
+		cursor: pointer;
+		position: fixed;
+		width: 100%;
+		z-index: 400;
+	}
+	.nav-btn:before {
+		content: "Menu";
 	}
 }
 /* --- End mobile and small screen layouts --- */
@@ -70,6 +88,7 @@
 @media screen and (min-width: 479px) and (max-width: 599px) {
 	body {
 		position: absolute;
+		padding-top: 110px;
 	}
 	header {
 		position: fixed;
@@ -92,17 +111,14 @@
 		margin: 0;
 		padding: 0;
 	}
-	ul.bro_menu li:hover { 
+	.nav li:hover { 
 		background: #3c7888;  
 	}
-    ul.bro_menu li:hover ul { 
+    .nav li:hover ul { 
 		display: block;  
 		}
-	ul.bro_menu { 
+	.nav { 
 		position: fixed; 
-	}
-	body {
-		padding-top: 110px;
 	}
 }
 /* --- End tablet and medium screen layouts --- */
@@ -112,13 +128,13 @@
 	header {
 		position: fixed;
 	}
-	ul.bro_menu li:hover { 
+	.nav li:hover { 
 		background: #3c7888;  
 	}
-    ul.bro_menu li:hover ul { 
+    .nav li:hover ul { 
 		display: block;  
 	}
-	ul.bro_menu { 
+	.nav { 
 		position: fixed; 
 	}
 	body {
