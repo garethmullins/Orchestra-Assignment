@@ -2,8 +2,6 @@
 /* CSS Document */
 
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
-@import url(https://fonts.googleapis.com/css?family=Souce+Sans+Pro);
-@import url(https://fonts.googleapis.com/css?family=Pinyon+Script);
 
 /* --- Begin ALL styles --- */
 * {
@@ -60,10 +58,10 @@ a:hover {
 	text-decoration: underline;
 }
 .anchor{
-  display: block;
-  height: 110px; /*same height as header*/
-  margin-top: -110px; /*same height as header*/
-  visibility: hidden;
+	display: block;
+	height: 110px; /*same height as header*/
+	margin-top: -110px; /*same height as header*/
+	visibility: hidden;
 }
 header {
 	background: #94d7e9;
