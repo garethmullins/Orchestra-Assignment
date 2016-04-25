@@ -20,7 +20,7 @@ h1 {
 	text-align: center;
 	font-size: 180%;
 	line-height: 120%;
-	padding: 5% 0;
+	padding: 5% 0 2% 0;
 	font-family:"Poiret One", Geneva, sans-serif;
 }
 h2 {
@@ -89,6 +89,25 @@ ul {
 	width: 90%;
 	max-width: 900px;
 	padding-bottom: 20px;
+}
+.newsletter_table {
+  width: 90%;
+  max-width: 600px;
+  border: 1px solid #666;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.newsletter_table th, td {
+  width: 25%;
+  text-align: left; 
+  vertical-align: top; 
+  border: 1px solid #666;
+  border-collapse: collapse;
+  padding: 0.3em;
+  caption-side: bottom;
+}
+.newsletter_table caption {
+  padding: 0.3em;
 }
 #doc {
 	margin: 40px;
