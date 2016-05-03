@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Begin head  -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Barrier Reef Orchestra: Supporters</title>
+
+<!-- Begin stylesheets -->
+<link rel="stylesheet" href="js/blueberry.css" /><style type="text/css"></style>
+<link rel="stylesheet" href="styles.css" /><style type="text/css"></style>
+<link rel="stylesheet" href="layout.css" /><style type="text/css"></style>
+<!-- End stylesheets -->
+
+<!-- Begin scripts -->
+<script src="js/jquery-2.2.3.min.js"></script>
+<script src="js/jquery.blueberry.js"></script>
+<script>
+$(window).load(function() {
+	$('.blueberry').blueberry();
+});
+</script>
+<!-- End scripts -->
+
+</head>
+<!-- End head  -->
+
+<!-- Begin body -->
+<body>
+
+<!-- Begin header -->
+	<header>
+    	<a href="index.html" id="logo"></a>
+    </header>
+<!-- End header -->
+
+<!-- Begin navigation bar -->
+<nav>
+<span class="nav-btn"></span>
+<ul class="nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a class="has-sub">News</a>
+    	<ul>
+            <li><a href="news.html">Visiting Soloist</a></li>
+            <li><a href="news.html#past_events">Past Events</a></li>
+            <li><a href="news.html#presidents_report">President's Report</a></li>
+            <li><a href="news.html#newsletters">Newsletters</a></li>
+        </ul>
+    </li>
+    <li><a href="gallery">Gallery</a></li>
+    <li><a class="has-sub">Supporters</a>
+        <ul>
+            <li><a href="supporters.html">Benefactors</a></li>
+            <li><a href="supporters.html#">Donations</a></li>
+            <li><a href="supporters.html#">Sponsors</a></li>
+        </ul>
+    </li>
+    <li><a class="has-sub">People</a>
+        <ul>
+            <li><a href="people.html#">Special Guests</a></li>
+            <li><a href="people.html#">Life Members</a></li>
+        </ul>
+    </li>
+    <li><a class="has-sub">About Us</a>
+        <ul>
+            <li><a href="about.html#">History</a></li>
+            <li><a href="about.html#">Committee</a></li>
+            <li><a href="about.html#">Rules</a></li>
+            <li><a href="about.html#">Repertoire</a></li>
+        </ul>
+    </li>
+    <li><a href="contact.html">Contact</a></li>
+    <li class="ticketing"><a href="https://www.townsville.qld.gov.au/facilities-and-recreation/theatres-and-galleries/ticketshop/whats-on-sale">Ticket Purchasing</a></li>
+</ul>
+</nav>
+<script>
+$('.has-sub').click( function(e) {
+    e.preventDefault();
+    $(this).parent().toggleClass('tap');
+});
+$('span.nav-btn').click(function () {
+	$('ul.nav').toggle();
+});
+$(window).resize(function () {
+	if ( $(window).width() > 478 ) {
+		$('ul.nav').removeAttr('style');
+	}
+});
+</script>
+<!-- End navigation bar -->
+
+<!-- Begin section one -->
+
+<div id="main">
+<h1>Heading</h1>
+<p>Paragraph</p>
+
+<p>Paragraph</p>
+<br />
+<br />
+</div>
+<!-- End section one -->
+
+<div class="clear"></div>
+
+<!-- Begin Footer -->
+<footer>
+    <section>
+        <h3><b>Barrier Reef Orchestra</b></h3>
+        <p>The Barrier Reef Orchestra is a product of North Queensland Ensembles Inc.<br/></p>
+    </section>
+    <section>
+        <h3>Connect With Us!</h3>
+        <ul class="social">
+            <li><a href="https://www.facebook.com/nqorchestra/"><img src="images/facebook.png" alt="Facebook" /></a></li> <!-- image obtained from https://www.iconfinder.com/Eggsplode -->
+            <li><a href="mailto:brotownsville@gmail.com?subject=Website%20Enquiry"><img src="images/mail.png" alt="email" /></a></li> <!-- image obtained from https://www.iconfinder.com/Eggsplode -->
+        </ul>
+    </section>
+    <section>
+        <p>Proudly Sponsored by</p>
+        <a href="https://www.townsville.qld.gov.au/"><img src="images/tcc_logo.jpg" alt="Townsville City Council"/></a>
+    </section>
+</footer>
+<footer class="second">
+	<p><h5>&copy; CP1406 Team 2. Content used is for educational and training purposes only.</h5></p>
+</footer>
+<!-- End Footer -->
+
+</body>
+<!-- End body -->
+
+</html>

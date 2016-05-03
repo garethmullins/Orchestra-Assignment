@@ -218,5 +218,8 @@ footer.second {
 	color: #FFF;
 	text-decoration: none;
 }
-
+.ticketing {
+	background-color: #0CF;
+	border-radius: 10px;
+}
 /* --- End navigation menu styles --- */
