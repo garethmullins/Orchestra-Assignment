@@ -2,6 +2,9 @@
 /* CSS Document */
 
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+@import url(https://fonts.googleapis.com/css?family=Prosto+One);
+@import url(https://fonts.googleapis.com/css?family=Comfortaa);
 
 /* --- Begin ALL styles --- */
 * {
@@ -18,23 +21,24 @@ body {
 }
 h1 {
 	text-align: center;
+	text-shadow: 3px 2px #000;
 	font-size: 180%;
 	line-height: 120%;
 	margin-top: 10px;
 	padding: 5% 0 2% 0;
-	font-family:"Poiret One", Geneva, sans-serif;
+	font-family:"Josefin Sans", Geneva, sans-serif;
 }
 h2 {
 	text-align: center;
 	line-height: 280%;
 	padding-left: 2%;
-	font-family:"Poiret One", Geneva, sans-serif;
+	font-family:"Josefin Sans", Geneva, sans-serif;
 }
 h3 {
 	text-align: center;
 	line-height: 110%;
 	padding: 5%;
-	font-family:"Poiret One", Geneva, sans-serif;
+	font-family:"Josefin Sans", Geneva, sans-serif;
 }
 h4 {
 	text-align: center;
@@ -60,8 +64,8 @@ a:hover {
 }
 .anchor{
 	display: block;
-	height: 110px; /*same height as header*/
-	margin-top: -110px; /*same height as header*/
+	height: 110px; /*must be same height as header*/
+	margin-top: -110px; /*must be same height as header*/
 	visibility: hidden;
 }
 header {
@@ -78,7 +82,7 @@ header {
 #logo {
 	margin: 10px 0 10px 0;
 	float: left;
-	width: 300px;
+	width: 100%;
 	height: 100px;
 	background: url(images/logo_large.png) no-repeat center;
 }
@@ -91,24 +95,52 @@ ul {
 	max-width: 900px;
 	padding-bottom: 20px;
 }
-.newsletter_table {
-  width: 90%;
-  max-width: 600px;
-  border: 1px solid #666;
-  margin: auto;
-  margin-bottom: 20px;
+table {
+  	width: 90%;
+	max-width: 600px;
+	margin: auto;
+	margin-bottom: 20px;
 }
-.newsletter_table th, td {
-  width: 25%;
-  text-align: left; 
-  vertical-align: top; 
-  border: 1px solid #666;
-  border-collapse: collapse;
-  padding: 0.3em;
-  caption-side: bottom;
+th, td {
+	width: 25%;
+	text-align: left; 
+	vertical-align: top; 
+	border-collapse: collapse;
+	padding: 0.3em;
+	caption-side: bottom;
 }
-.newsletter_table caption {
-  padding: 0.3em;
+caption {
+	padding: 0.3em;
+}
+td {
+	border: none;
+	text-align: center;
+}
+table.newsletter {
+	border: 1px solid #666;
+}
+table.newsletter_table tr {
+	border: 1px solid #666;
+}
+table.newsletter_table td {
+	border: 1px solid #666;
+}
+table.contact_table {
+	width: 100%;
+}
+td.contact_table_c1 {
+	width: 30%;
+	text-align: left;
+}
+td.contact_table_c2 {
+	width: 70%;
+}
+textarea { 
+    resize: vertical;
+	width: 100%;
+}
+input {
+	width: 100%;
 }
 #doc {
 	margin: 40px;
@@ -178,6 +210,7 @@ footer.second {
 	max-height: 50px;
 	text-align: center;
 	opacity: 0.95;
+	padding-bottom: 1em;
 }
 /* --- End ALL styles --- */
 
@@ -186,17 +219,22 @@ footer.second {
     background: #94d7e9;
 	height: 30px;
     width: 100%;
-	font-family: "Poiret One", Geneva, sans-serif;
+	font-family:"Josefin Sans", Geneva, sans-serif;
 	font-weight: bold;
 	z-index: 300;
+	text-align: center;
 }
 
 .nav > li { 
-    float: left; 
     position: relative;
 	z-index: 200;
+	display: inline-block;
+	list-style: none; 
+	white-space: nowrap;
 }
-
+.nav > li > ul > li{
+	display: block;
+}
 .nav ul {
     background: #94d7e9; 
     display: none; 
@@ -212,14 +250,12 @@ footer.second {
     padding: 0 10px; 
 }
 
-.nav li { list-style: none; white-space:nowrap;}
-
 .nav a:hover {
 	color: #FFF;
 	text-decoration: none;
 }
 .ticketing {
 	background-color: #0CF;
-	border-radius: 10px;
+	
 }
 /* --- End navigation menu styles --- */
