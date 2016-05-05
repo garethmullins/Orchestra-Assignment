@@ -75,7 +75,7 @@
 		display: block;
 		background-color: #458a9c;
 		color: #FFF;
-		font-family:"Poiret One", Geneva, sans-serif;
+		font-family:"Josefin Sans", Geneva, sans-serif;
 		text-align: center;
 		cursor: pointer;
 		position: fixed;
@@ -123,7 +123,6 @@
 		}
 	.nav { 
 		position: fixed;
-		border-bottom: #0F0 thick;
 	}
 }
 /* --- End tablet and medium screen layouts --- */
@@ -132,6 +131,7 @@
 @media screen and (min-width: 600px) and (max-width: 2000px) {
 	header {
 		position: fixed;
+		height: 120px;
 	}
 	.nav li:hover { 
 		background: #3c7888;  
@@ -140,10 +140,10 @@
 		display: block;  
 	}
 	.nav { 
-		position: fixed; 
+		position: fixed;
 	}
 	body {
-		padding-top: 110px;
+		padding-top: 120px;
 	}
 }
 /* --- End computer and large screen layouts --- */
