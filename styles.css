@@ -30,8 +30,9 @@ h1 {
 }
 h2 {
 	text-align: center;
-	line-height: 280%;
+	line-height: 140%;
 	padding-left: 2%;
+	margin: 1.5em;
 	font-family:"Josefin Sans", Geneva, sans-serif;
 }
 h3 {
