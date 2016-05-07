@@ -6,23 +6,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Barrier Reef Orchestra: About Us</title>
+<title>Barrier Reef Orchestra: Contact Us</title>
 
 <!-- Begin stylesheets -->
-<link rel="stylesheet" href="js/blueberry.css" /><style type="text/css"></style>
 <link rel="stylesheet" href="styles.css" /><style type="text/css"></style>
 <link rel="stylesheet" href="layout.css" /><style type="text/css"></style>
-<link href="SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css" />
 <!-- End stylesheets -->
 
 <!-- Begin scripts -->
 <script src="js/jquery-2.2.3.min.js"></script>
-<script src="js/jquery.blueberry.js"></script>
-<script>
-$(window).load(function() {
-	$('.blueberry').blueberry();
-});
-</script>
 <!-- End scripts -->
 
 </head>
@@ -73,7 +65,7 @@ $(window).load(function() {
         </ul>
     </li>
     <li><a href="contact.html">Contact</a></li>
-    <li class="ticketing"><a href="https://www.townsville.qld.gov.au/facilities-and-recreation/theatres-and-galleries/ticketshop/whats-on-sale">Ticket Purchasing</a></li>
+    <li class="ticketing"><a href="https://www.townsville.qld.gov.au/facilities-and-recreation/theatres-and-galleries/ticketshop">Ticket Purchasing</a></li>
 </ul>
 </nav>
 <script>
@@ -95,35 +87,62 @@ $(window).resize(function () {
 <!-- Begin section one -->
 
 <div id="main">
-<h1>Contact Us</h1>
-<p>
-You can email us directly at <a href="mailto:brotownsville@gmail.com?subject=Website%20Enquiry">brotownsville@gmail.com</a> or fill out the form below to contact us.</p>
+  <h2 class="content-head is-center">Contact Us!</h2>
+  <div id="thanks">
+       <p>
+           We would <em>love</em> to hear from you! </p>
+           <p>Please use the <b><em>Contact Form</em></b>
+           to send us a message.
+       </p>
+   </div>
 
-<p>
-<form action="" method="get" name="contact_form">
-<table class="contact_table" width="100%" border="0">
-  <tr>
-    <td class="contact_table_c1">Name:</td>
-    <td class="contact_table_c2"><input name="name" type="text" size="50" maxlength="30" /></td>
-  </tr>
-  <tr>
-    <td class="contact_table_c1">Email Address:</td>
-    <td class="contact_table_c2"><input name="email" type="text" size="50" maxlength="80" /></td>
-  </tr>
-  <tr>
-    <td class="contact_table_c1">Telephone Number:</td>
-    <td class="contact_table_c2"><input name="telephone" type="text" size="50" maxlength="10" /></td>
-  </tr>
-  <tr>
-    <td class="contact_table_c1">Comments:</td>
-    <td class="contact_table_c2"><textarea name="comments" cols="" rows="7">&nbsp;</textarea></td>
-  </tr>
-</table>
-</form>
+<!-- Begin Contact Form -->
+   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-</p>
+  <form id="gform" method="POST" class="pure-form pure-form-stacked"
+  action="https://script.google.com/macros/s/AKfycbz35u0uZ-1CWjg1xqURgSWE1W5t6D7GUGnzFeZ1KiSESQEg8ig/exec">
+    <!-- change the form action to your script url -->
+
+    <fieldset class="pure-group">
+      <label for="name">Name: </label>
+      <input id="name" name="name" placeholder="Enter your full name here" />
+    </fieldset>
+
+    <fieldset class="pure-group">
+      <label for="email">Email Address:</label>
+      <input id="email" name="email" type="email" value=""
+      required placeholder="your.name@email.com"/>
+      <span id="email-invalid" style="visibility:hidden">
+        Must be a valid email address</span>
+    </fieldset>
+
+    <fieldset class="pure-group">
+      <label for="phone">Contact Phone: </label>
+      <input id="phone" name="phone" placeholder="Landline or Mobile" />
+    </fieldset>
+    
+    <fieldset class="pure-group">
+      <label for="message">Message: </label>
+      <textarea id="message" name="message" rows="10"
+      placeholder="Tell us what's on your mind..."></textarea>
+    </fieldset>
+
+    <button class="button-success pure-button button-xlarge">
+      <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
 <br />
-<br />
+  </form>
+
+  <!-- Customise the Thankyou Message People See when they submit the form: -->
+  <div style="display:none;" id="thankyou_message">
+    <h2><em>Thanks</em> for contacting us!
+      We will get back to you soon!</h2>
+  </div>
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" type="text/javascript"
+  src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+<!-- End Contact Form -->
 </div>
 <!-- End section one -->
 
