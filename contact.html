@@ -46,8 +46,8 @@
     <li><a class="has-sub">Supporters</a>
         <ul>
             <li><a href="supporters.html#benefactors">Benefactors</a></li>
-            <li><a href="supporters.html#donations">Donations</a></li>
             <li><a href="supporters.html#sponsors">Sponsors</a></li>
+            <li><a href="supporters.html#you_can_help">You Can Help</a></li>
         </ul>
     </li>
     <li><a class="has-sub">People</a>
@@ -87,7 +87,7 @@ $(window).resize(function () {
 <!-- Begin section one -->
 
 <div id="main">
-  <h2 class="content-head is-center">Contact Us!</h2>
+  <h1 class="content-head is-center">Contact Us!</h1>
   <div id="thanks">
        <p>
            We would <em>love</em> to hear from you! </p>
@@ -97,13 +97,13 @@ $(window).resize(function () {
    </div>
 
 <!-- Begin Contact Form -->
-   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+   <!-- <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css"> -->
+   <link rel="stylesheet" href="pure-min.css">
 
   <form id="gform" method="POST" class="pure-form pure-form-stacked"
   action="https://script.google.com/macros/s/AKfycbz35u0uZ-1CWjg1xqURgSWE1W5t6D7GUGnzFeZ1KiSESQEg8ig/exec">
     <!-- change the form action to your script url -->
-
+<aside>
     <fieldset class="pure-group">
       <label for="name">Name: </label>
       <input id="name" name="name" placeholder="Enter your full name here" />
@@ -121,16 +121,17 @@ $(window).resize(function () {
       <label for="phone">Contact Phone: </label>
       <input id="phone" name="phone" placeholder="Landline or Mobile" />
     </fieldset>
-    
+</aside>
+<article>    
     <fieldset class="pure-group">
       <label for="message">Message: </label>
       <textarea id="message" name="message" rows="10"
       placeholder="Tell us what's on your mind..."></textarea>
     </fieldset>
 
-    <button class="button-success pure-button button-xlarge">
-      <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+    <button class="button-success pure-button button-xlarge">Send</button>
 <br />
+</article>
   </form>
 
   <!-- Customise the Thankyou Message People See when they submit the form: -->
