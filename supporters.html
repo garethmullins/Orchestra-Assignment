@@ -15,6 +15,8 @@
 
 <!-- Begin scripts -->
 <script src="js/jquery-2.2.3.min.js"></script>
+<script src="js/jquery.validate.js"></script>
+<script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
 <!-- End scripts -->
 
 </head>
@@ -45,9 +47,9 @@
     <li><a href="gallery.html">Gallery</a></li>
     <li><a class="has-sub">Supporters</a>
         <ul>
+            <li><a href="supporters.html#you_can_help">You Can Help</a></li>
             <li><a href="supporters.html#benefactors">Benefactors</a></li>
             <li><a href="supporters.html#sponsors">Sponsors</a></li>
-            <li><a href="supporters.html#you_can_help">You Can Help</a></li>
         </ul>
     </li>
     <li><a class="has-sub">People</a>
@@ -81,10 +83,98 @@ $(window).resize(function () {
 		$('ul.nav').removeAttr('style');
 	}
 });
+$("#gform").validate();
 </script>
 <!-- End navigation bar -->
 
 <!-- Begin section one -->
+
+<div id="main">
+<span class="anchor" id="you_can_help"></span>
+<h1>You Can Help!</h1>
+<h2>Donate, Sponsor, or Become A Benefactor</h2>
+<p>The North Queensland Ensembles Inc is a tax deductible fund listed on the <a href="http://arts.gov.au/roco">Register of Cultural Organisations</a> under Subdivision 30-B of the Income tax Assessment Act 1997. Donations of $2.00 or more are tax deductible. Help us continue to provide quality entertainment for the Townsville community by supporting the orchestra. </p>
+</div>
+
+<div class="clear"></div>
+
+<div id="main">
+<!-- Begin Contact Form -->
+   <!-- <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css"> -->
+   <link rel="stylesheet" href="pure-min.css">
+
+  <form id="gform" method="POST" class="pure-form pure-form-stacked"
+  action="https://script.google.com/macros/s/AKfycbz35u0uZ-1CWjg1xqURgSWE1W5t6D7GUGnzFeZ1KiSESQEg8ig/exec">
+    <!-- change the form action to your script url -->
+
+<aside>
+    <fieldset class="pure-group">
+      <label for="name">Your Full Name:<br />
+      (Benefactors - this is the name that will be placed on the roll.)</label>
+      <input id="name" name="name" placeholder="Enter your full name here" required/>
+    </fieldset>  
+    
+    <fieldset>  
+      <label for="anonymous">Remain Anonymous (Benefactors):</label>
+      <input id="anonymous" name="anonymous" type="checkbox" />      
+    </fieldset>
+
+    <fieldset class="pure-group">
+      <label for="email">Email Address:</label>
+      <input id="email" name="email" type="email" value=""
+      required placeholder="your.name@email.com" required/>
+      <span id="email-invalid" style="visibility:hidden">
+        Must be a valid email address</span>
+    </fieldset>
+
+    <fieldset class="pure-group">
+      <label for="phone">Contact Phone: </label>
+      <input id="phone" name="phone" minlength="8" placeholder="Landline or Mobile" required/>
+    </fieldset>
+</aside>    
+<article>    
+    <fieldset class="pure-group">
+      <label for="mail">Mailing Address: </label>
+      <input id="mail" name="mail" placeholder="Where would you like paperwork sent?" required />
+    </fieldset>
+    
+    <fieldset class="pure-group">
+      <label for="amount">I Would Like To Donate: </label>
+      <input id="amount" name="amount" placeholder="$xxx.xx" required/>
+    </fieldset>
+    
+    <fieldset class="pure-group">
+      <label for="message">Message: </label>
+      <textarea id="message" name="message" rows="5"
+      placeholder="Have any questions? Or maybe tell us why you're donating. The floor is yours!" required></textarea>
+    </fieldset>
+
+    <button class="button-success pure-button button-xlarge">Send</button>
+<br />
+</article>
+  </form>
+</div>
+
+<div class="clear"></div>
+
+<div id="main">
+<!-- Begin Form Thank You Message -->
+  <div style="display:none;" id="thankyou_message">
+    <h2>Thanks for contacting us! We will get back to you soon!</h2>
+    <h3><A HREF="javascript:history.go(0)">Click here to refresh the form</A></h3>
+  </div>
+<!-- End Form Thank You Message -->
+
+<!-- End Contact Form -->
+
+<p>Donations are tax deductable. For more information contact Simon McConnell 0418776961, <a href="mailto:mcconnellgray@optusnet.com.au?subject=Donations%20Enquiry">mcconnellgray@optusnet.com.au</a>. Your support of the Orchestra will be greatly appreciated.</p>
+
+</div>
+<!-- End section one -->
+
+<div class="clear"></div>
+
+<!-- Begin section two -->
 
 <div id="main">
 <h1>Benefactors</h1>
@@ -127,15 +217,14 @@ BARRIER REEF ORCHESTRA BENEFACTORS' ROLL </h2>
   </tr>
 </table>
 </p>
-<p>
-With a philanthropic gift of $200 or more (we leave that up to you) you can become an Orchestra Benefactor and be placed on our Benefactor roll for twelve months. This roll will be published in each concert prgram and on our website for twelve months. As a benefactor you will also receive two complimentary tickets to our next concert, be placed on the mailing list for our newsletter and will be a guest at our annual Season's Lunch function. Please complete the form below.</p>
+<p>With a philanthropic gift of $200 or more (we leave that up to you) you can become an Orchestra Benefactor and be placed on our Benefactor roll for twelve months. This roll will be published in each concert prgram and on our website for twelve months. As a benefactor you will also receive two complimentary tickets to our next concert, be placed on the mailing list for our newsletter and will be a guest at our annual Season's Lunch function. Please complete the form below.</p>
 
 </div>
-<!-- End section one -->
+<!-- End section two -->
 
 <div class="clear"></div>
 
-<!-- Begin section two -->
+<!-- Begin section three -->
 
 <div id="main">
 <span class="anchor" id="sponsors"></span>
@@ -178,96 +267,6 @@ With a philanthropic gift of $200 or more (we leave that up to you) you can beco
 </table>
 
 </p>
-</div>
-<!-- End section two -->
-
-<div class="clear"></div>
-
-<!-- Begin section three -->
-
-<div id="main">
-<span class="anchor" id="you_can_help"></span>
-<h1>You Can Help!</h1>
-<h2>Donate, Sponsor, or Become A Benefactor</h2>
-<p>The North Queensland Ensembles Inc is a tax deductible fund listed on the <a href="http://arts.gov.au/roco">Register of Cultural Organisations</a> under Subdivision 30-B of the Income tax Assessment Act 1997. Donations of $2.00 or more are tax deductible. Help us continue to provide quality entertainment for the Townsville community by supporting the orchestra. </p>
-</div>
-
-<div class="clear"></div>
-
-<div id="main">
-<!-- Begin Contact Form -->
-   <!-- <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css"> -->
-   <link rel="stylesheet" href="pure-min.css">
-
-  <form id="gform" method="POST" class="pure-form pure-form-stacked"
-  action="https://script.google.com/macros/s/AKfycbz35u0uZ-1CWjg1xqURgSWE1W5t6D7GUGnzFeZ1KiSESQEg8ig/exec">
-    <!-- change the form action to your script url -->
-
-<aside>
-    <fieldset class="pure-group">
-      <label for="name">Your Full Name:<br />
-      (Benefactors - this is the name that will be placed on the roll.)</label>
-      <input id="name" name="name" placeholder="Enter your full name here" />
-    </fieldset>  
-    
-    <fieldset>  
-      <label for="anonymous">Remain Anonymous (Benefactors):</label>
-      <input id="anonymous" name="anonymous" type="checkbox" value="Yes" />
-    </fieldset>
-
-    <fieldset class="pure-group">
-      <label for="email">Email Address:</label>
-      <input id="email" name="email" type="email" value=""
-      required placeholder="your.name@email.com"/>
-      <span id="email-invalid" style="visibility:hidden">
-        Must be a valid email address</span>
-    </fieldset>
-
-    <fieldset class="pure-group">
-      <label for="phone">Contact Phone: </label>
-      <input id="phone" name="phone" placeholder="Landline or Mobile" />
-    </fieldset>
-</aside>    
-<article>    
-    <fieldset class="pure-group">
-      <label for="mail">Mailing Address: </label>
-      <input id="mail" name="mail" placeholder="Where would you like paperwork sent?" />
-    </fieldset>
-    
-    <fieldset class="pure-group">
-      <label for="amount">I Would Like To Donate: </label>
-      <input id="amount" name="amount" placeholder="$xxx.xx" />
-    </fieldset>
-    
-    <fieldset class="pure-group">
-      <label for="message">Message: </label>
-      <textarea id="message" name="message" rows="5"
-      placeholder="Have any questions? Or maybe tell us why you're donating. The floor is yours!"></textarea>
-    </fieldset>
-
-    <button class="button-success pure-button button-xlarge">Send</button>
-<br />
-</article>
-  </form>
-</div>
-
-<div class="clear"></div>
-
-<div id="main">
-  <!-- Customise the Thankyou Message People See when they submit the form: -->
-  <div style="display:none;" id="thankyou_message">
-    <h2><em>Thanks</em> for contacting us!
-      We will get back to you soon!</h2>
-  </div>
-
-  <!-- Submit the Form to Google Using "AJAX" -->
-  <script data-cfasync="false" type="text/javascript"
-  src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
-<!-- End Contact Form -->
-
-<p>Donations are tax deductable. For more information contact Simon McConnell 0418776961, <a href="mailto:mcconnellgray@optusnet.com.au?subject=Donations%20Enquiry">mcconnellgray@optusnet.com.au</a>. Your support of the Orchestra will be greatly appreciated.
-</p>
-
 </div>
 <!-- End section three -->
 
