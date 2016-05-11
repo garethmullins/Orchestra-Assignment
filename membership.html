@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Barrier Reef Orchestra: Contact Us</title>
+<title>Barrier Reef Orchestra: Membership Form</title>
 
 <!-- Begin stylesheets -->
 <link rel="stylesheet" href="styles.css" /><style type="text/css"></style>
@@ -71,6 +71,7 @@
     	<ul>
             <li><a href="contact.html">Contact Form</a></li>
             <li><a href="membership.html">Membership Form</a></li>
+            <li><a href="signup.html">Sign-Up Form</a></li>
         </ul>
     </li>
     <li class="ticketing"><a href="https://www.townsville.qld.gov.au/facilities-and-recreation/theatres-and-galleries/ticketshop">Ticket Purchasing</a></li>
@@ -100,7 +101,10 @@ $("#gform").validate();
 <!-- Begin Contact Form -->
    
 <h1>Membership Application Form</h1>
-<p></p>
+
+<article>
+    <img src="images/membership_prices.png" alt="Membership Prices poster" />
+</article>
   
 <form id="gform" method="POST" class="pure-form pure-form-stacked"
 action="https://script.google.com/macros/s/AKfycbz35u0uZ-1CWjg1xqURgSWE1W5t6D7GUGnzFeZ1KiSESQEg8ig/exec">
@@ -136,37 +140,36 @@ action="https://script.google.com/macros/s/AKfycbz35u0uZ-1CWjg1xqURgSWE1W5t6D7GU
       </tr>
     </table>
     </fieldset>
-</aside>
-<article>
+
 	<fieldset class="pure-group">
         <label for="name2">Applicant 2: </label>
-        <input id="name2" name="name2" placeholder="Enter the name of Applicant 2" required/>
+        <input id="name2" name="name2" placeholder="Enter the name of Applicant 2" />
     </fieldset>
     
     <fieldset class="pure-group">
         <label for="name3">Child Applicant 1 <em>(must be under 18 years of age)</em>: </label>
-        <input id="name3" name="name3" placeholder="Enter the name of Child Applicant 1" required/>
+        <input id="name3" name="name3" placeholder="Enter the name of Child Applicant 1" />
     </fieldset>
     
     <fieldset class="pure-group">
         <label for="name4">Child Applicant 2 <em>(must be under 18 years of age)</em>: </label>
-        <input id="name4" name="name4" placeholder="Enter the name of Child Applicant 2" required/>
+        <input id="name4" name="name4" placeholder="Enter the name of Child Applicant 2" />
     </fieldset>
     
     <fieldset class="pure-group">
         <label for="name5">Child Applicant 3 <em>(must be under 18 years of age)</em>: </label>
-        <input id="name5" name="name5" placeholder="Enter the name of Child Applicant 3" required/>
+        <input id="name5" name="name5" placeholder="Enter the name of Child Applicant 3" />
     </fieldset>
 	<br />
     <button class="button-success pure-button button-xlarge">Send</button>
     <br />
-</article>
+</aside>
 </form>
 
 <!-- Begin Form Thank You Message -->
     <div style="display:none;" id="thankyou_message">
         <h2>Thank you for your membership enquiry! We will get back to you soon for payment details!</h2>
-        <h3><A HREF="javascript:history.go(0)">Click here to refresh the form</A></h3>
+        <h3><a href="javascript:history.go(0)">Click here to refresh the form</a></h3>
     </div>
 <!-- End Form Thank You Message -->
 <!-- End Contact Form -->

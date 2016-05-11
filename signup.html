@@ -6,15 +6,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Barrier Reef Orchestra: About Us</title>
+<title>Barrier Reef Orchestra: Sign-Up Form</title>
 
 <!-- Begin stylesheets -->
 <link rel="stylesheet" href="styles.css" /><style type="text/css"></style>
 <link rel="stylesheet" href="layout.css" /><style type="text/css"></style>
+<link rel="stylesheet" href="pure-min.css">
 <!-- End stylesheets -->
 
 <!-- Begin scripts -->
 <script src="js/jquery-2.2.3.min.js"></script>
+<script src="js/jquery.validate.js"></script>
+<script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
 <!-- End scripts -->
 
 </head>
@@ -42,7 +45,7 @@
             <li><a href="news.html#newsletters">Newsletters</a></li>
         </ul>
     </li>
-    <li><a href="gallery.hmtl">Gallery</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
     <li><a class="has-sub">Supporters</a>
         <ul>
             <li><a href="supporters.html#you_can_help">You Can Help</a></li>
@@ -87,18 +90,90 @@ $(window).resize(function () {
 		$('ul.nav').removeAttr('style');
 	}
 });
+$("#gform").validate();
 </script>
 <!-- End navigation bar -->
 
 <!-- Begin section one -->
 
 <div id="main">
-<h1>Heading</h1>
-<p>Paragraph</p>
 
-<p>Paragraph</p>
-<br />
-<br />
+<!-- Begin Contact Form -->
+   
+<h1>Sign-Up Form</h1>
+<p></p>
+  
+<form id="gform" method="POST" class="pure-form pure-form-stacked"
+action="https://script.google.com/macros/s/AKfycbz35u0uZ-1CWjg1xqURgSWE1W5t6D7GUGnzFeZ1KiSESQEg8ig/exec">
+<!-- change the form action to your script url -->
+<aside>
+    <fieldset class="pure-group">
+        <label for="name">Name: </label>
+        <input id="name" name="name" placeholder="Enter your full name here" required/>
+    </fieldset>
+    
+    <fieldset class="pure-group">
+        <label for="email">Email Address:</label>
+        <input id="email" name="email" type="email" value="" required placeholder="your.name@email.com" required/><span id="email-invalid" style="visibility:hidden">Must be a valid email address</span>
+    </fieldset>
+    
+    <fieldset class="pure-group">
+        <label for="phone">Contact Phone: </label>
+        <input id="phone" name="phone" minlength="8" placeholder="Landline or Mobile" required/>
+    </fieldset>
+    
+    <fieldset class="pure-group">
+    <table width="200">
+      <tr>
+        <td><label><input type="radio" name="signup_radio" value="player" id="signup_radio_0" required/>As A Player</label></td>
+        <td><label><input type="radio" name="signup_radio" value="management" id="signup_radio_1" required/>Management / Administration</label></td>
+        </tr>
+        <tr>
+        <td><label><input type="radio" name="signup_radio" value="player_support" id="signup_radio_2" required/>Player Support</label></td>
+        <td><label><input type="radio" name="signup_radio" value="fundraising" id="signup_radio_3" required/>Fundraising</label></td>
+        </tr>
+        <tr>
+        <td><label><input type="radio" name="signup_radio" value="marketing" id="signup_radio_4" required/>Marketing / Promotions</label></td>
+        <td><label><input type="radio" name="signup_radio" value="sponsorship" id="signup_radio_5" required/>Sponsorship</label></td>
+        </tr>
+        <tr>
+        <td><label><input type="radio" name="signup_radio" value="publishing" id="signup_radio_6" required/>Desktop Publishing</label></td>
+      </tr>
+    </table>
+    </fieldset>
+</aside>
+<article>
+	<fieldset class="pure-group">
+      <label for="instrument">Instrument/s (Players only): </label>
+      <textarea id="instrument" name="instrument" rows="2"
+      placeholder="What instrument/s do you play?" ></textarea>
+    </fieldset>
+    
+    <fieldset class="pure-group">
+      <label for="qualifications">Qualifications: </label>
+      <textarea id="qualifications" name="qualifications" rows="5"
+      placeholder="What qualifications do you have?" ></textarea>
+    </fieldset>
+    
+    <fieldset class="pure-group">
+      <label for="experience">Experience: </label>
+      <textarea id="experience" name="experience" rows="5"
+      placeholder="Tell us about your musical experience..." ></textarea>
+    </fieldset>
+	<br />
+    <button class="button-success pure-button button-xlarge">Send</button>
+
+</article>
+</form>
+
+<!-- Begin Form Thank You Message -->
+    <div style="display:none;" id="thankyou_message">
+        <h2>Thanks for signing up! We'll be in touch soon.</h2>
+        <h3><a href="javascript:history.go(0)">Click here to refresh the form</a></h3>
+    </div>
+<!-- End Form Thank You Message -->
+<!-- End Contact Form -->
+
 </div>
 <!-- End section one -->
 
