@@ -128,10 +128,10 @@ td {
 table.newsletter {
 	border: 1px solid #666;
 }
-table.newsletter_table tr {
+table.bordered_table tr {
 	border: 1px solid #666;
 }
-table.newsletter_table td {
+table.bordered_table td {
 	border: 1px solid #666;
 }
 table.contact_table {
@@ -219,6 +219,13 @@ footer.second {
 	opacity: 0.95;
 	padding-bottom: 1em;
 }
+.galleria {
+	width: 80%;
+	height: 400px;
+	background: #2c2b2d;
+	margin-left: auto;
+	margin-right: auto;
+}
 /* --- End ALL styles --- */
 
 /* --- Begin navigation menu styles --- */
@@ -269,7 +276,7 @@ footer.second {
 
 /* --- Begin Form Styles --- */
 
-#thanks {
+#block_text {
     background: #0CF; /* same color as selected state on site menu */
     padding: 0.3em 1em;
     border-radius: 3px;
@@ -280,12 +287,6 @@ footer.second {
 }
 textarea {
     width: 100%;
-}
-.content-head {
-	margin: 1em 0 1em;
-}
-.is-center {
-	text-align: center;
 }
 .button-success {
 	color: white;

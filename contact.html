@@ -11,6 +11,7 @@
 <!-- Begin stylesheets -->
 <link rel="stylesheet" href="styles.css" /><style type="text/css"></style>
 <link rel="stylesheet" href="layout.css" /><style type="text/css"></style>
+<link rel="stylesheet" href="pure-min.css">
 <!-- End stylesheets -->
 
 <!-- Begin scripts -->
@@ -66,7 +67,12 @@
             <li><a href="about.html#repertoire">Repertoire</a></li>
         </ul>
     </li>
-    <li><a href="contact.html">Contact</a></li>
+    <li><a class="has-sub">Contact</a>
+    	<ul>
+            <li><a href="contact.html">Contact Form</a></li>
+            <li><a href="membership.html">Membership Form</a></li>
+        </ul>
+    </li>
     <li class="ticketing"><a href="https://www.townsville.qld.gov.au/facilities-and-recreation/theatres-and-galleries/ticketshop">Ticket Purchasing</a></li>
 </ul>
 </nav>
@@ -88,65 +94,74 @@ $("#gform").validate();
 <!-- End navigation bar -->
 
 <!-- Begin section one -->
-
 <div id="main">
-  <h1 class="content-head is-center">Contact Us!</h1>
-  <div id="thanks">
-       <p>
-           We would <em>love</em> to hear from you! </p>
-           <p>Please use the <b><em>Contact Form</em></b>
-           to send us a message.
-       </p>
-   </div>
 
 <!-- Begin Contact Form -->
-   <!-- <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css"> -->
-   <link rel="stylesheet" href="pure-min.css">
+<h1>Contact Form</h1>
 
-  <form id="gform" method="POST" class="pure-form pure-form-stacked"
-  action="https://script.google.com/macros/s/AKfycbz35u0uZ-1CWjg1xqURgSWE1W5t6D7GUGnzFeZ1KiSESQEg8ig/exec">
-    <!-- change the form action to your script url -->
+<form id="gform" method="POST" class="pure-form pure-form-stacked"
+action="https://script.google.com/macros/s/AKfycbz35u0uZ-1CWjg1xqURgSWE1W5t6D7GUGnzFeZ1KiSESQEg8ig/exec">
+<!-- change the form action to your script url -->
 <aside>
     <fieldset class="pure-group">
-      <label for="name">Name: </label>
-      <input id="name" name="name" placeholder="Enter your full name here" required/>
+        <label for="name">Name: </label>
+        <input id="name" name="name" placeholder="Enter your full name here" required/>
     </fieldset>
-
+    
     <fieldset class="pure-group">
-      <label for="email">Email Address:</label>
-      <input id="email" name="email" type="email" value=""
-      required placeholder="your.name@email.com" required/>
-      <span id="email-invalid" style="visibility:hidden">
-        Must be a valid email address</span>
+        <label for="email">Email Address:</label>
+        <input id="email" name="email" type="email" value="" required placeholder="your.name@email.com" required/><span id="email-invalid" style="visibility:hidden">Must be a valid email address</span>
     </fieldset>
-
+    
     <fieldset class="pure-group">
-      <label for="phone">Contact Phone: </label>
-      <input id="phone" name="phone" minlength="8" type="phone" placeholder="Landline or Mobile" required/>
+        <label for="phone">Contact Phone: </label>
+        <input id="phone" name="phone" minlength="8" placeholder="Landline or Mobile" required/>
     </fieldset>
 </aside>
 <article>    
     <fieldset class="pure-group">
-      <label for="message">Message: </label>
-      <textarea id="message" name="message" rows="10"
-      placeholder="Tell us what's on your mind..." required></textarea>
+        <label for="message">Message: </label>
+        <textarea id="message" name="message" rows="10" placeholder="Tell us what's on your mind..." required></textarea>
     </fieldset>
 
     <button class="button-success pure-button button-xlarge">Send</button>
-<br />
+    <br />
 </article>
-  </form>
+</form>
 
 <!-- Begin Form Thank You Message -->
-  <div style="display:none;" id="thankyou_message">
-    <h2>Thanks for contacting us! We will get back to you soon!</h2>
-    <h3><A HREF="javascript:history.go(0)">Click here to refresh the form</A></h3>
-  </div>
+    <div style="display:none;" id="thankyou_message">
+        <h2>Thanks for contacting us! We will get back to you soon!</h2>
+        <h3><A HREF="javascript:history.go(0)">Click here to refresh the form</A></h3>
+    </div>
 <!-- End Form Thank You Message -->
-
 <!-- End Contact Form -->
+
 </div>
 <!-- End section one -->
+
+<div class="clear"></div>
+
+<!-- Begin section two -->
+<div id="main">
+<p>Alternatively, you can contact us via these methods:</p>
+<table class="bordered_table" width="90%" border="0">
+  <tr>
+    <td>Mail</td>
+    <td>PO Box 576, Townsville, QLD, 4810</td>
+  </tr>
+  <tr>
+    <td>Telephone</td>
+    <td>07 4722 2789</td>
+  </tr>
+  <tr>
+    <td>email</td>
+    <td><a href="mailto:brotownsville@gmail.com?subject=Website%20Enquiry">brotownsville@gmail.com</a></td>
+  </tr>
+</table>
+
+</div>
+<!-- End section two -->
 
 <div class="clear"></div>
 
