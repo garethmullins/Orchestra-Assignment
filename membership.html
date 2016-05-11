@@ -126,8 +126,8 @@ action="https://script.google.com/macros/s/AKfycbyuKMBrsFh3Xu0pKXarhCYPr6-CbNFCu
     </fieldset>
     
     <fieldset class="pure-group">
-        <label for="address">Postal Address: </label>
-        <input id="address" name="address" placeholder="Enter your postal address" required/>
+        <label for="mail">Mailing Address: </label>
+        <input id="mail" name="mail" placeholder="Where would you like paperwork sent?" required/>
     </fieldset>
     
     <fieldset class="pure-group">
@@ -168,8 +168,10 @@ action="https://script.google.com/macros/s/AKfycbyuKMBrsFh3Xu0pKXarhCYPr6-CbNFCu
 
 <!-- Begin Form Thank You Message -->
     <div style="display:none;" id="thankyou_message">
-        <h2>Thank you for your membership enquiry! We will get back to you soon for payment details!</h2>
-        <h3><a href="javascript:history.go(0)">Click here to refresh the form</a></h3>
+        <div id="block_text">
+        <p>Thank you for your membership enquiry! We will get back to you soon for payment details!<br />
+        <a href="javascript:history.go(0)">Click here to refresh the form</a></p>
+        </div>
     </div>
 <!-- End Form Thank You Message -->
 <!-- End Contact Form -->
