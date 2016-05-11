@@ -56,9 +56,17 @@ img {
 	width: auto;
 }
 #bio_img {
-	width: 20%;
+	width: 29%;
 	min-width: 250px;
 	margin: 10px auto;
+	float: left;
+	text-align: center;
+}
+#bio_img2 {
+	width: 29%;
+	min-width: 250px;
+	margin: 2% auto;
+	padding: 5px;
 	float: left;
 	text-align: center;
 }
