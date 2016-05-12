@@ -19,9 +19,6 @@ body {
 	margin: auto;	
 	max-width: 100%;
 }
-li.has-sub {
-	cursor: none;
-}
 h1 {
 	text-align: center;
 	text-shadow: 3px 2px #000;
@@ -282,6 +279,11 @@ footer.second {
 .ticketing {
 	background-color: #0CF;
 	
+}
+a.has-sub:hover {
+	cursor: default;
+	background: #94d7e9;
+	color: #2c2d2b;
 }
 /* --- End navigation menu styles --- */
 
