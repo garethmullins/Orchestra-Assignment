@@ -19,6 +19,9 @@ body {
 	margin: auto;	
 	max-width: 100%;
 }
+li.has-sub {
+	cursor: none;
+}
 h1 {
 	text-align: center;
 	text-shadow: 3px 2px #000;
