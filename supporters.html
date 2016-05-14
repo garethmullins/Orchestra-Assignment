@@ -38,7 +38,7 @@
     <li><a href="index.html">Home</a></li>
     <li><a class="has-sub">News&#x25BE</a>
     	<ul>
-            <li><a href="news.html">Visiting Soloist</a></li>
+            <li><a href="news.html">Upcoming Events</a></li>
             <li><a href="news.html#past_events">Past Events</a></li>
             <li><a href="news.html#presidents_report">President's Report</a></li>
             <li><a href="news.html#newsletters">Newsletters</a></li>
@@ -68,12 +68,12 @@
     </li>
     <li><a class="has-sub">Contact&#x25BE</a>
     	<ul>
-            <li><a href="contact.html">Contact Form</a></li>
-            <li><a href="membership.html">Membership Form</a></li>
-            <li><a href="signup.html">Sign-Up Form</a></li>
+            <li><a href="contact.html">Contact Us!</a></li>
+            <li><a href="membership.html">Ticket Membership</a></li>
+            <li><a href="signup.html">Sign-Up</a></li>
         </ul>
     </li>
-    <li class="ticketing"><a href="https://www.townsville.qld.gov.au/facilities-and-recreation/theatres-and-galleries/ticketshop">Ticket Purchasing</a></li>
+    <li class="ticketing"><a href="membership.html">Ticket Purchasing</a></li>
 </ul>
 </nav>
 <script>
@@ -89,7 +89,6 @@ $(window).resize(function () {
 		$('ul.nav').removeAttr('style');
 	}
 });
-$("#gform").validate();
 </script>
 <!-- End navigation bar -->
 
@@ -98,8 +97,8 @@ $("#gform").validate();
 <div id="main">
 <span class="anchor" id="you_can_help"></span>
 <h1>You Can Help!</h1>
-<h2>Donate, Sponsor, or Become A Benefactor</h2>
-<p>The North Queensland Ensembles Inc is a tax deductible fund listed on the <a href="http://arts.gov.au/roco">Register of Cultural Organisations</a> under Subdivision 30-B of the Income tax Assessment Act 1997. Donations of $2.00 or more are tax deductible. Help us continue to provide quality entertainment for the Townsville community by supporting the orchestra. </p>
+<h2>Donate To Become A Benefactor or Corporate Sponsor</h2>
+<p>If you would like to help us by way of a financial donation, please fill out the form below. The North Queensland Ensembles Inc is a tax deductible fund listed on the <a href="http://arts.gov.au/roco">Register of Cultural Organisations</a> under Subdivision 30-B of the Income tax Assessment Act 1997. Donations of $2.00 or more are tax deductible. Help us continue to provide quality entertainment for the Townsville community by supporting the orchestra. </p>
 </div>
 
 <div class="clear"></div>
@@ -115,9 +114,9 @@ $("#gform").validate();
 
 <aside>
     <fieldset class="pure-group">
-      <label for="name">Your Full Name:<br />
-      (Benefactors - this is the name that will be placed on the roll.)</label>
-      <input id="name" name="name" placeholder="Enter your full name here" required/>
+      <label for="name">Your Full Name or Company Name:<br />
+      (This is the name that will be placed on the roll.)</label>
+      <input id="name" name="name" placeholder="Contact Name & Company Name (if applicable)" required/>
     </fieldset>  
     
     <fieldset class="pure-group">
@@ -150,7 +149,7 @@ $("#gform").validate();
     
     <fieldset class="pure-group">
       <label for="amount">I Would Like To Donate: </label>
-      <input id="amount" name="amount" placeholder="$xxx.xx" required/>
+      <input id="amount" name="amount" placeholder="$xxx.xx" value="$" required/>
     </fieldset>
     
     <fieldset class="pure-group">
