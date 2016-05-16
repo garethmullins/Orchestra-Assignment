@@ -22,6 +22,32 @@ $(window).load(function() {
 	$('.blueberry').blueberry();
 });
 </script>
+<script>
+$('.has-sub').click( function(e) {
+    e.preventDefault();
+    $(this).parent().toggleClass('tap');
+});
+$('span.nav-btn').click(function () {
+	$('ul.nav').toggle();
+});
+$(window).resize(function () {
+	if ( $(window).width() > 478 ) {
+		$('ul.nav').removeAttr('style');
+	}
+});
+</script>
+<!-- Begin Facebook js code -->
+<div id="fb-root"></div>
+<script>
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+<!-- End Facebook js code -->
 <!-- End scripts -->
 
 </head>
@@ -29,16 +55,6 @@ $(window).load(function() {
 
 <!-- Begin body -->
 <body>
-<!-- Begin Facebook js code -->
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.6";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<!-- End Facebook js code -->
 
 <!-- Begin header -->
 	<header>
@@ -91,20 +107,7 @@ $(window).load(function() {
     <li class="ticketing"><a href="membership.html">Ticket Purchasing</a></li>
 </ul>
 </nav>
-<script>
-$('.has-sub').click( function(e) {
-    e.preventDefault();
-    $(this).parent().toggleClass('tap');
-});
-$('span.nav-btn').click(function () {
-	$('ul.nav').toggle();
-});
-$(window).resize(function () {
-	if ( $(window).width() > 478 ) {
-		$('ul.nav').removeAttr('style');
-	}
-});
-</script>
+
 <!-- End navigation bar -->
 
 <!-- Begin slider -->
