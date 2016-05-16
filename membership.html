@@ -70,11 +70,10 @@
     <li><a class="has-sub">Contact&#x25BE</a>
     	<ul>
             <li><a href="contact.html">Contact Us!</a></li>
-            <li><a href="membership.html">Ticket Membership</a></li>
-            <li><a href="signup.html">Sign-Up</a></li>
+            <li><a href="membership.html">Membership</a></li>
         </ul>
     </li>
-    <li class="ticketing"><a href="membership.html">Ticket Purchasing</a></li>
+    <li class="ticketing"><a href="https://whatson.townsville.qld.gov.au/categories/ticketshop">Ticket Purchasing</a></li>
 </ul>
 </nav>
 <script>
@@ -100,16 +99,15 @@ $(window).resize(function () {
 <!-- Begin Contact Form -->
    
 <h1>Membership Application Form</h1>
-<p>If you'd like to get a great deal on tickets for our upcoming events, become a member using the form below. Alternatively, tickets for indivual events are available from <a href="https://www.townsville.qld.gov.au/facilities-and-recreation/theatres-and-galleries/ticketshop">Ticketshop.</a></p>
-<article>
-    <img src="images/membership_prices.png" alt="Membership Fees: Adults $30, Full-Time Students, Children under 18 years and Concession Card holders $15, Family Memberships (2 adult and 3 children) $60" />
-    <h1></h1>
-    <a href="https://www.townsville.qld.gov.au/facilities-and-recreation/theatres-and-galleries/ticketshop"><img src="images/sponsors/ticketshop_logo.png" alt="Buy Tickets direct from TicketShop"/></a>
-</article>
+<p>If you'd like to become part of our orchestra family, please fill in the following form. You will be contacted separately for payment.</p>
   
 <form id="gform" method="POST" class="pure-form pure-form-stacked"
 action="https://script.google.com/macros/s/AKfycbyuKMBrsFh3Xu0pKXarhCYPr6-CbNFCuOkaEdqHHa3GqL3i3g0/exec">
 <!-- change the form action to your script url -->
+<article>
+    <img src="images/membership_prices.png" alt="Membership Fees: Adults $30, Full-Time Students, Children under 18 years and Concession Card holders $15, Family Memberships (2 adult and 3 children) $60" />
+    <h1></h1>
+</article>
 <aside>
     <fieldset class="pure-group">
         <label for="name">Applicant 1: </label>
@@ -161,19 +159,65 @@ action="https://script.google.com/macros/s/AKfycbyuKMBrsFh3Xu0pKXarhCYPr6-CbNFCu
         <label for="name5">Child Applicant 3 <em>(must be under 18 years of age)</em>: </label>
         <input id="name5" name="name5" placeholder="Enter the name of Child Applicant 3" />
     </fieldset>
-	<br />
-    <button class="button-success pure-button button-xlarge">Send</button>
+    <fieldset class="pure-group">
+    <table width="200">
+    <caption>
+    I / We Would Like To Help:
+  	</caption>
+      <tr>
+        <td><label><input type="radio" name="signup_radio" value="player" id="signup_radio_0" required/>As A Player</label></td>
+        <td><label><input type="radio" name="signup_radio" value="management" id="signup_radio_1" required/>Management / Administration</label></td>
+        </tr>
+        <tr>
+        <td><label><input type="radio" name="signup_radio" value="player_support" id="signup_radio_2" required/>Player Support</label></td>
+        <td><label><input type="radio" name="signup_radio" value="fundraising" id="signup_radio_3" required/>Fundraising</label></td>
+        </tr>
+        <tr>
+        <td><label><input type="radio" name="signup_radio" value="marketing" id="signup_radio_4" required/>Marketing / Promotions</label></td>
+        <td><label><input type="radio" name="signup_radio" value="sponsorship" id="signup_radio_5" required/>Sponsorship</label></td>
+        </tr>
+        <tr>
+        <td><label><input type="radio" name="signup_radio" value="publishing" id="signup_radio_6" required/>Desktop Publishing</label></td>
+        <td><label><input type="radio" name="signup_radio" value="publishing" id="signup_radio_7" required/>Other / Multiple</label></td>
+      </tr>
+    </table>
+    </fieldset>
     <br />
 </aside>
+<article>
+	<fieldset class="pure-group">
+      <label for="instrument">Instrument/s (Players only): </label>
+      <textarea id="instrument" name="instrument" rows="2"
+      placeholder="What instrument/s do you play?" ></textarea>
+    </fieldset>
+    
+    <fieldset class="pure-group">
+      <label for="qualifications">Qualifications: </label>
+      <textarea id="qualifications" name="qualifications" rows="5"
+      placeholder="What qualifications do you have?" ></textarea>
+    </fieldset>
+    
+    <fieldset class="pure-group">
+      <label for="experience">Experience: </label>
+      <textarea id="experience" name="experience" rows="5"
+      placeholder="Tell us about your musical experience..." ></textarea>
+    </fieldset>
+	<br />
+    <button class="button-success pure-button button-xlarge">Send</button>
+
+</article>
 </form>
 
 <!-- Begin Form Thank You Message -->
+<div id="centered_div">
     <div style="display:none;" id="thankyou_message">
         <div id="block_text">
         <p>Thank you for your membership enquiry! We will get back to you soon for payment details!<br />
         <a href="javascript:history.go(0)">Click here to refresh the form</a></p>
         </div>
     </div>
+</div>
+</article>
 <!-- End Form Thank You Message -->
 <!-- End Contact Form -->
 
