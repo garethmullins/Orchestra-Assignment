@@ -55,6 +55,11 @@ img {
 	height: auto;
 	width: auto;
 }
+summary {
+	font-size: 120%;
+	font-family:"Josefin Sans", Geneva, sans-serif;
+	font-weight: bold;
+}
 #bio_img {
 	width: 29%;
 	min-width: 250px;
