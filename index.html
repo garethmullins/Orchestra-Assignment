@@ -22,20 +22,6 @@ $(window).load(function() {
 	$('.blueberry').blueberry();
 });
 </script>
-<script>
-$('.has-sub').click( function(e) {
-    e.preventDefault();
-    $(this).parent().toggleClass('tap');
-});
-$('span.nav-btn').click(function () {
-	$('ul.nav').toggle();
-});
-$(window).resize(function () {
-	if ( $(window).width() > 478 ) {
-		$('ul.nav').removeAttr('style');
-	}
-});
-</script>
 <!-- Begin Facebook js code -->
 <div id="fb-root"></div>
 <script>
@@ -106,7 +92,20 @@ $(window).resize(function () {
     <li class="ticketing"><a href="https://whatson.townsville.qld.gov.au/categories/ticketshop">Ticket Purchasing</a></li>
 </ul>
 </nav>
-
+<script>
+$('.has-sub').click( function(e) {
+    e.preventDefault();
+    $(this).parent().toggleClass('tap');
+});
+$('span.nav-btn').click(function () {
+	$('ul.nav').toggle();
+});
+$(window).resize(function () {
+	if ( $(window).width() > 478 ) {
+		$('ul.nav').removeAttr('style');
+	}
+});
+</script>
 <!-- End navigation bar -->
 
 <!-- Begin slider -->
@@ -114,7 +113,7 @@ $(window).resize(function () {
     <div id="content">
         <div class="blueberry">
             <ul class="slides">
-                <li><a href="https://www.townsville.qld.gov.au/facilities-and-recreation/theatres-and-galleries/ticketshop/whats-on-sale"><img src="images/slider6.jpg" alt="Twilight Classics Advertisement" /></a></li>
+                <li><a href="https://whatson.townsville.qld.gov.au/categories/ticketshop"><img src="images/slider6.jpg" alt="Twilight Classics Advertisement" /></a></li>
                 <li><img src="images/slider2.jpg" alt="Image of orchestra conductor"/></li>
                 <li><a href="supporters.html"><img src="images/slider7.jpg" alt="Thank You For Your Support"/></a></li>
                 <li><img src="images/slider4.jpg" alt="Image of orchestra" /></li>
@@ -143,7 +142,7 @@ $(window).resize(function () {
 <section>
     <img src="images/horn.png" alt="Horn" /> <!-- image obtained from https://www.iconfinder.com/Eggsplode -->
     <h2>News</h2>
-    <p>With us, there's always someting exciting happening! <a href="news.html">Get the latest here...</a></p>
+    <p>With us, there's always something exciting happening! <a href="news.html">Get the latest here...</a></p>
 </section>
 <!-- End first section -->
 
@@ -177,7 +176,7 @@ $(window).resize(function () {
 <section>
     <h2>Gallery</h2>
     <img src="images/violin.png" alt="Violin" /> <!-- image obtained from https://www.iconfinder.com/Eggsplode -->
-    <p>Peruse our gallery of images from events <a href="gallery.html">here.</a> We'd also love to see your photos - get in touch <a href="contact.html">here?</a></p>
+    <p>Peruse our gallery of images from events <a href="gallery.html">here.</a> We'd also love to see your photos - get in touch <a href="contact.html">here.</a></p>
 </section>
 <section>
     <h2>People</h2>
