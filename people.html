@@ -1,10 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <!-- Begin head  -->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <title>Barrier Reef Orchestra: People</title>
 
@@ -14,7 +14,7 @@
 <!-- End stylesheets -->
 
 <!-- Begin scripts -->
-<script src="js/jquery-2.2.3.min.js"></script>
+<script src="js/jquery-2.2.3.min.js" type="text/javascript"></script>
 <!-- End scripts -->
 
 </head>
@@ -24,17 +24,17 @@
 <body>
 
 <!-- Begin header -->
-	<header>
+	<div id="header">
     	<a href="index.html" id="logo"></a>
-    </header>
+    </div>
 <!-- End header -->
 
 <!-- Begin navigation bar -->
-<nav>
+<div id="nav">
 <span class="nav-btn"></span>
 <ul class="nav">
     <li><a href="index.html">Home</a></li>
-    <li><a class="has-sub">News&#x25BE</a>
+    <li><a class="has-sub">News&#x25BE;</a>
     	<ul>
             <li><a href="news.html">Upcoming Events</a></li>
             <li><a href="news.html#past_events">Past Events</a></li>
@@ -43,20 +43,20 @@
         </ul>
     </li>
     <li><a href="gallery.html">Gallery</a></li>
-    <li><a class="has-sub">Supporters&#x25BE</a>
+    <li><a class="has-sub">Supporters&#x25BE;</a>
         <ul>
             <li><a href="supporters.html#you_can_help">You Can Help</a></li>
             <li><a href="supporters.html#benefactors">Benefactors</a></li>
             <li><a href="supporters.html#sponsors">Sponsors</a></li>
         </ul>
     </li>
-    <li><a class="has-sub">People&#x25BE</a>
+    <li><a class="has-sub">People&#x25BE;</a>
         <ul>
             <li><a href="people.html#special_guests">Special Guests</a></li>
             <li><a href="people.html#life_members">Life Members</a></li>
         </ul>
     </li>
-    <li><a class="has-sub">About Us&#x25BE</a>
+    <li><a class="has-sub">About Us&#x25BE;</a>
         <ul>
             <li><a href="about.html#history">History</a></li>
             <li><a href="about.html#committee">Committee</a></li>
@@ -64,7 +64,7 @@
             <li><a href="about.html#repertoire">Repertoire</a></li>
         </ul>
     </li>
-    <li><a class="has-sub">Contact&#x25BE</a>
+    <li><a class="has-sub">Contact&#x25BE;</a>
     	<ul>
             <li><a href="contact.html">Contact Us!</a></li>
             <li><a href="membership.html">Membership</a></li>
@@ -72,8 +72,8 @@
     </li>
     <li class="ticketing"><a href="https://whatson.townsville.qld.gov.au/categories/ticketshop">Ticket Purchasing</a></li>
 </ul>
-</nav>
-<script>
+</div>
+<script type="text/javascript">
 $('.has-sub').click( function(e) {
     e.preventDefault();
     $(this).parent().toggleClass('tap');
@@ -90,11 +90,11 @@ $(window).resize(function () {
 <!-- End navigation bar -->
 
 <!-- Begin section one -->
-<div id="main">
+<div class="main">
     <span class="anchor" id="special_guests"></span>
     <h1>Special Guests</h1>
     
-    <div id="bio_img">
+    <div class="bio_img">
         <img src="images/people/mark_shiell.png" alt="Image of Mark Shiell"/>
     </div>
     <h2>Mark Shiell (Conductor)</h2>
@@ -105,12 +105,12 @@ $(window).resize(function () {
     
     <div class="clear"></div>
     
-    <div id="bio_img">
+    <div class="bio_img">
         <img src="images/people/adam_lopez.png" alt="Image of Adam Lopez"/>
     </div>
     <h2>Adam Lopez (Vocal)</h2>
     <p>Adam Lopez’s exceptional vocal artistry has paved opportunities to perform backing vocals for some of the biggest names in the music industry such as Mariah Carey, Keith Urban and The Coors. His most recent noted collaboration was headlining with Australian Jazz legend James Morrison in a string of Symphonic Concerts in Perth, Hobart and Brisbane.</p>
-    <p>His discography includes an eclectic collection of genres spanning from Pop-Opera, Pop, Rhythm & Blues, Jazz, Power Ballads and Fiery Latin!</p>
+    <p>His discography includes an eclectic collection of genres spanning from Pop-Opera, Pop, Rhythm &amp;Blues, Jazz, Power Ballads and Fiery Latin!</p>
     <p>His phenomenal vocal range smashed <a href="https://www.youtube.com/watch?v=Kdp4NHWr7G8">two Guinness World Records</a> (one note above the range of a piano!)</p>
     <p>This achievement has astounded audiences from all around the world leading him to perform and appear on international television and radio stations in Japan, Spain, Italy, Korea, Hong Kong and the USA.</p>
     <p>Adam Lopez has undoubtedly got one of the most fascinating vocal instruments on the planet. He delighted audiences when he sang in Townsville with the Barrier Orchestra in 2012 along with Sean O’Boyle and James Morrison.</p>
@@ -118,7 +118,7 @@ $(window).resize(function () {
     
     <div class="clear"></div>
     
-    <div id="bio_img">
+    <div class="bio_img">
         <img src="images/people/domenico_taraborrelli.png" alt="Image of Domenico Taraborrelli"/>
     </div>
     <h2>Domenico Taraborrelli (Accordion)</h2>
@@ -128,7 +128,7 @@ $(window).resize(function () {
     
     <div class="clear"></div>
     
-    <div id="bio_img">
+    <div class="bio_img">
         <img src="images/people/david_hudson.png" alt="Image of David Hudson"/>
     </div>
     <h2>David Hudson (Musician, Entertainer)</h2>
@@ -143,7 +143,7 @@ $(window).resize(function () {
     
     <div class="clear"></div>
     
-    <div id="bio_img">
+    <div class="bio_img">
         <img src="images/people/raymond_yong.png" alt="Image of Raymond Yong"/>
     </div>
     <h2>Raymond Yong (Conductor)</h2>
@@ -155,17 +155,17 @@ $(window).resize(function () {
     
     <div class="clear"></div>
     
-    <div id="bio_img">
+    <div class="bio_img">
         <img src="images/people/jennifer_bradstreet.png" alt="Image of Jennifer Bradstreet"/>
     </div>
     <h2>Jennifer Bradstreet (Flute)</h2>
     <p>Jennifer Bradstreet completed a Bachelor of Music with Honours at the Sydney Conservatorium, before taking up a summer scholarship at St Andrews and Oxford in the UK, and then moving to London in 2010. She became a student at the Royal College of Music under British flautist Susan Milan, and graduated with a Postgraduate Diploma of Performance in 2011.</p>
     <p>While in London, she played in side-by-side projects with the London Symphony and was invited onto the prestigious BBC Symphony Orchestral pathway. Many summer scholarships and international master-classes followed, in Germany, England and Italy.</p>
-    <p>In 2013, Jennifer accepted a Masters scholarship under James Kortum and Aldo Baerten (Belgium) at the Sydney Conservatorium, where she will complete her studies this year. She was a finalist in the 2013 Australian Flute Festival Orchestral Flute Competition and first-prize winner in the 2014 Australian Concerto & Vocal Competition (all instruments). She is active as a soloist and chamber musician, and also performs regularly with the Australian Opera and Ballet Orchestra in Sydney, with whom she has freelanced since 2013.</p>
+    <p>In 2013, Jennifer accepted a Masters scholarship under James Kortum and Aldo Baerten (Belgium) at the Sydney Conservatorium, where she will complete her studies this year. She was a finalist in the 2013 Australian Flute Festival Orchestral Flute Competition and first-prize winner in the 2014 Australian Concerto &amp;Vocal Competition (all instruments). She is active as a soloist and chamber musician, and also performs regularly with the Australian Opera and Ballet Orchestra in Sydney, with whom she has freelanced since 2013.</p>
     
     <div class="clear"></div>
     
-    <div id="bio_img">
+    <div class="bio_img">
         <img src="images/people/leah_li.png" alt="Image of Leah Li"/>
     </div>
     <h2>Leah Li (Harp)</h2>
@@ -175,7 +175,7 @@ $(window).resize(function () {
     
     <div class="clear"></div>
     
-    <div id="bio_img">
+    <div class="bio_img">
         <img src="images/people/richard_mcintyre.png" alt="Image of Richard McIntyre"/>
     </div>
     <h2>Richard McIntyre, OAM, BMus (University of Sydney)<br />(Conductor/Bassoonist)</h2>
@@ -188,7 +188,7 @@ $(window).resize(function () {
     
     <div class="clear"></div>
     
-    <div id="bio_img">
+    <div class="bio_img">
         <img src="images/people/mario_dobernig.png" alt="Image of Mario Dobernig"/>
     </div>
     <h2>Mario Dobernig (Conductor)</h2>
@@ -198,7 +198,7 @@ $(window).resize(function () {
     
     <div class="clear"></div>
     
-    <div id="bio_img">
+    <div class="bio_img">
         <img src="images/people/bronwyn_douglass.png" alt="Image of Bronwyn Douglass"/>
     </div>
     <h2><a href="http://www.bronwyndouglass.com/">Bronwyn Douglass</a> (Mezzo-soprano)</h2>
@@ -210,71 +210,73 @@ $(window).resize(function () {
 
     <div class="clear"></div>
     
-    <div id="bio_img">
+    <div class="bio_img">
         <img src="images/people/yoshika_masuda.png" alt="Image of Yoshika Masuda"/>
     </div>
     <h2>Yoshika Masuda (Cello)</h2>
-    <p>Born in Kobe, Japan, Yoshika Masuda first started to play the cello at the age of five. Following studies with George Pedersen in Australia, he went onto study at the Royal Northern College of Music in Manchester on a full scholarship. Yoshika was recently awarded first prize at both the Australian Concerto & Vocal Competition and the YMF National Debut Concerto Competition, and is also the winner of the Yamaha Music Foundation of Europe String Award. He has also won top prizes at the Sydney Cello Award, Australian National Youth Concerto Competition and the J A Beare International Solo Bach Competition. Yoshika has performed concertos and recitals throughout Australia, Austria, France, Italy, Japan, the UK and USA.</p>
+    <p>Born in Kobe, Japan, Yoshika Masuda first started to play the cello at the age of five. Following studies with George Pedersen in Australia, he went onto study at the Royal Northern College of Music in Manchester on a full scholarship. Yoshika was recently awarded first prize at both the Australian Concerto &amp;Vocal Competition and the YMF National Debut Concerto Competition, and is also the winner of the Yamaha Music Foundation of Europe String Award. He has also won top prizes at the Sydney Cello Award, Australian National Youth Concerto Competition and the J A Beare International Solo Bach Competition. Yoshika has performed concertos and recitals throughout Australia, Austria, France, Italy, Japan, the UK and USA.</p>
     <p>Yoshika gained his Bachelor of Music with first class honours from the RNCM, receiving both the Sir John Munduell Principals’s Prize and the Leonard Rose Cello Award for outstanding achievement. He also completed his Master of Music at the RNCM with distinction the following year.</p>
     <p>Yoshika is currently continuing his studies in Los Angeles as a Doctorate student. Yoshika’s cello is a fine Carl Becker model (1930), loaned to him from a private foundation.</p>
     <p><a href="http://www.yoshicello.com/">You can visit Yoshika Masuda's website here.</a></p>
-    <div id="bio_img2">
+
+    <div class="bio_img2">
         <img src="images/people/stefan_cassomenos.png" alt="Image of Stefan Cassomenos"/>
-        <h2>Stefan Cassomenos</h2>
+        <h3>Stefan Cassomenos</h3>
     </div>
-    <div id="bio_img2">
+    <div class="bio_img2">
         <img src="images/people/james_morrison.png" alt="Image of James Morrison"/>
-        <h2>James Morrison</h2>
+        <h3>James Morrison</h3>
     </div>
-    <div id="bio_img2">
+    <div class="bio_img2">
         <img src="images/people/sean_oboyle.png" alt="Image of Sean O'Boyle"/>
-        <h2>Sean O'Boyle</h2>
+        <h3>Sean O'Boyle</h3>
     </div>
-    <div id="bio_img2">
+    <div class="bio_img2">
         <img src="images/people/rebecca_chan.png" alt="Image of Rebecca Chan"/>
-        <h2>Rebecca Chan</h2>
+        <h3>Rebecca Chan</h3>
     </div>
-    <div id="bio_img2">
+    <div class="bio_img2">
         <img src="images/people/blair_harris.png" alt="Image of Blair Harris"/>
-        <h2>Blair Harris</h2>
+        <h3>Blair Harris</h3>
     </div>
-    <div id="bio_img2">
+    <div class="bio_img2">
         <img src="images/people/david_lawrence.png" alt="Image of David Lawrence"/>
-        <h2>David Lawrence</h2>
+        <h3>David Lawrence</h3>
     </div>
-    <div id="bio_img2">
+    <div class="bio_img2">
         <img src="images/people/ji_won_kim.png" alt="Image of Ji Won Kim"/>
-        <h2>Ji Won Kim</h2>
+        <h3>Ji Won Kim</h3>
     </div>
 </div>
-<!--- End Section One --->
 
-<div class="clear">
+<!-- End Section One -->
 
-<!--- Begin Section Two --->
-<div id="main">
+<div class="clear"></div>
+
+<!-- Begin Section Two -->
+<div class="main">
     <span class="anchor" id="life_members"></span>
     <h1>Life Members</h1>
     
-    <div id="bio_img">
+    <div class="bio_img">
     	<img src="images/people/jacinta_payne.png" alt="Image of Jacinta Payne"/>
     </div>
     <h2>Jacinta Payne<br />Life Member since May 2015</h2>
     <p>Jacinta has been part of the Orchestra from the beginning when she played 1st Clarinet at the first performance on Sunday, 29th October 2000. She has been on the management committee and was a voluntary manager of the Orchestra.</p>
     <p>Jacinta has had the task of being Rehearsal Conductor on many occasions and conducted a performance in 2004. Over the years, through her teaching she has been able to encourage many players to join the Orchestra and has mentored many young woodwind players.</p>
     
-    <div class="clear">
+    <div class="clear"></div>
     
-    <div id="bio_img">
+    <div class="bio_img">
     	<img src="images/people/alan_nixon.png" alt="Image of Alan Nixon"/>
     </div>
     <h2>Alan Nixon<br />Life Member since May 2015</h2>
     <p>Alan has been Secretary of North Queensland Ensembles Inc. /Barrier Reef Orchestra for eight years. He is a former Commonwealth Government officer mainly in the Commonwealth Employment Service and prior to retirement he was the Department's Zone Manager for North Queensland. This expertise has served the Orchestra well as Alan has facilitated North Queensland Ensembles becoming incorporated and was Secretary at the time when we employed our first Orchestra Manager.</p>
     <p>Alan has a background in community service having been a member of both Australian Jaycees and Rotary. He has also had long experience as an actor, producer and Committee member with several little theatre groups across the State.</p>
     
-    <div class="clear">
+    <div class="clear"></div>
     
-    <div id="bio_img">
+    <div class="bio_img">
     	<img src="images/people/stephen_frewyn_lord.png" alt="Image of Stephen Frewen-Lord"/>
     </div>
     <h2>Stephen Frewen-Lord<br />
@@ -282,9 +284,9 @@ $(window).resize(function () {
     <p>Stephen has been involved with the Barrier Reef Orchestra since its inception; having played as concertmaster in the orchestra’s inaugural concert in 2000. Since then, he has missed only a couple of Barrier Reef Orchestra concerts, and has been concert master for most concerts. When not rehearsing with the BRO, Stephen is involved in a number of ensembles around Townsville. He manages and plays with the Melaleuca String Quartet, directed Strings Non Troppo, and plays in Double Play – a guitar/violin duo.</p>
     <p>Stephen has had regular involvement with the Mulkadee Arts Festival, and performs regularly in community events such as Eco Fiesta, Riverfest, Heritage Day and Stable on the Strand. In his role as concert master over the past 15 years, Stephen has enjoyed many discussions with guest conductors concerning the artistic direction of the orchestra. As a string teacher, he has encouraged many young string players to become regular members of the orchestra. Stephen loves his involvement with the orchestra, and is delighted to be joined by young players who share his passion for music. Stephen is looking forward to passing on the baton to the next BRO concert master!</p>
     
-    <div class="clear">
+    <div class="clear"></div>
     
-    <div id="bio_img">
+    <div class="bio_img">
     	<img src="images/people/jenny_carr.png" alt="Image of Jenny Carr"/>
     </div>
     <h2>Jenny Carr<br />Life Member since July 2010</h2>
@@ -293,7 +295,7 @@ $(window).resize(function () {
     
     <div class="clear"></div>
     
-    <div id="bio_img">
+    <div class="bio_img">
     	<img src="images/people/carol_dallosto.png" alt="Image of Carol Dall'Osto"/>
     </div>
     <h2>Carol Dall'Osto<br />Life Member since July 2010</h2>
@@ -302,46 +304,49 @@ $(window).resize(function () {
     
     <div class="clear"></div>
     
-    <div id="bio_img">
+    <div class="bio_img">
     	<img src="images/people/donna_mcmahon.png" alt="Image of Donna McMahon"/>
     </div>
     <h2>Donna McMahon<br />Life Member since July 2010</h2>
     <p>
-    Donna has been a leader in the Townsville music community since she arrived in 1973 fresh from the Conservatorium to teach strings for Education Queensland. Until 2009 she has also been involved with the Townsville Youth Orchestra, the Australian String Teachers’ Association, the Australian Concerto & Vocal Competition, and lately of course the Barrier Reef Orchestra.</p>
-    <p>Apart from being one of the prime movers in the formation of the BRO, she has been performer, rehearsal conductor, musical advisor, & visiting conductor liaison. In 2009, she was rehearsal conductor, played with the orchestra, and managed the music library. She recently graduated with a Master's Degree in Music from James Cook University.</p>
+    Donna has been a leader in the Townsville music community since she arrived in 1973 fresh from the Conservatorium to teach strings for Education Queensland. Until 2009 she has also been involved with the Townsville Youth Orchestra, the Australian String Teachers’ Association, the Australian Concerto &amp;Vocal Competition, and lately of course the Barrier Reef Orchestra.</p>
+    <p>Apart from being one of the prime movers in the formation of the BRO, she has been performer, rehearsal conductor, musical advisor, &amp;visiting conductor liaison. In 2009, she was rehearsal conductor, played with the orchestra, and managed the music library. She recently graduated with a Master's Degree in Music from James Cook University.</p>
     
-    <div class="clear">
+    <div class="clear"></div>
     
-    <div id="bio_img">
+    <div class="bio_img">
     	<img src="images/people/photo_not_available.png" alt="No picture available"/>
     </div>
     <h2>David Pearse<br />Life Member since June 2006</h2>
     <p>David was heavily involved with the Townsville music scene from the 1970s, including the formation of the BRO in 1999. He was made a Life Member by the Committee in June 2006, when he and his wife Elizabeth left Townsville to live in Canberra.</p>
 
-<!--- End Section Two --->
-<div class="clear">
+<!-- End Section Two -->
+
+<div class="clear"></div>
+
 <!-- Begin Footer -->
-<footer>
-    <section>
+<div class="footer">
+    <div class="section">
         <h3><b>Barrier Reef Orchestra</b></h3>
         <p>The Barrier Reef Orchestra is a product of North Queensland Ensembles Inc.<br/></p>
-    </section>
-    <section>
+    </div>
+    <div class="section">
         <h3>Connect With Us!</h3>
         <ul class="social">
             <li><a href="https://www.facebook.com/nqorchestra/"><img src="images/facebook.png" alt="Facebook" /></a></li> <!-- image obtained from https://www.iconfinder.com/Eggsplode -->
             <li><a href="mailto:brotownsville@gmail.com?subject=Website%20Enquiry"><img src="images/mail.png" alt="email" /></a></li> <!-- image obtained from https://www.iconfinder.com/Eggsplode -->
         </ul>
-    </section>
-    <section>
+    </div>
+    <div class="section">
         <p>Proudly Sponsored by</p>
         <a href="https://www.townsville.qld.gov.au/"><img src="images/tcc_logo.jpg" alt="Townsville City Council"/></a>
-    </section>
-</footer>
-<footer class="second">
-	<p><h5>&copy; CP1406 Team 2. Content used is for educational and training purposes only.</h5></p>
-</footer>
+    </div>
+</div>
+<div class="footer_second">
+	<h5>&copy; CP1406 Team 2. Content used is for educational and training purposes only.</h5>
+</div>
 <!-- End Footer -->
+</div>
 
 </body>
 <!-- End body -->

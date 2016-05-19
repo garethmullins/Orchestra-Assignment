@@ -32,7 +32,7 @@ h2 {
 	text-align: center;
 	line-height: 100%;
 	padding-left: 2%;
-	margin: 1em;
+	margin-top: 1em;
 	font-family:"Josefin Sans", Geneva, sans-serif;
 }
 h3 {
@@ -60,17 +60,16 @@ summary {
 	font-family:"Josefin Sans", Geneva, sans-serif;
 	font-weight: bold;
 }
-#bio_img {
+.bio_img {
 	width: 29%;
 	min-width: 250px;
 	margin: 10px auto;
 	float: left;
 	text-align: center;
 }
-#bio_img2 {
-	width: 29%;
-	min-width: 250px;
-	margin: 2% auto;
+.bio_img2 {
+	width: 21%;
+	/*min-width: 250px;*/
 	padding: 5px;
 	float: left;
 	text-align: center;
@@ -89,7 +88,7 @@ a:hover {
 	margin-top: -110px; /*must be same height as header*/
 	visibility: hidden;
 }
-header {
+#header {
 	background: #94d7e9;
 	width: 100%;
 	height: 110px;
@@ -111,7 +110,7 @@ header {
 ul {
 	list-style: none;
 }
-#main {
+.main {
 	margin: auto;
 	width: 90%;
 	max-width: 900px;
@@ -176,7 +175,7 @@ input {
 	max-width: 800px;
 	margin-top: 30px;
 }
-section {
+.section {
 	width: 29%;
 	float: left;
 	margin: 2% 2%;
@@ -190,14 +189,14 @@ section {
 .clear {
 	clear: both;
 }
-article {
+.article {
 	float: right;
 	margin: 0 auto;
 	width: 45%;
 	height: auto;
 	text-align: center;
 }
-aside {
+.aside {
 	float: left;
 	margin: 0 auto;
 	width: 45%;
@@ -205,21 +204,21 @@ aside {
 	text-align: center;
 }
 ul.events li {
-	padding-left: 3%;
+	margin-top: 1em;
 }
-footer {
+.footer {
 	background: #333333;
 	width: 100%;
 	overflow: hidden;
 	opacity: 0.90%;
 }
-footer img {
+.footer img {
 	margin-bottom: 10px;
 }
-footer p, footer h3 {
+.footer p, .footer h3 {
 	color: #3c7888;
 }
-footer p a {
+.footer p a {
 	color: #3c7888;
 	text-decoration: none;
 }
@@ -229,7 +228,7 @@ ul.social li {
 ul.social.li img {
 	height: 50px;
 }
-footer.second {
+.footer_second {
 	border-top: 1px solid #4D4E50;
 	background-color: #333333;
 	max-height: 50px;
@@ -299,7 +298,7 @@ a.has-sub:hover {
 
 /* --- Begin Form Styles --- */
 
-#block_text {
+.block_text {
     background: #0CF; /* same color as selected state on site menu */
     padding: 0.3em 1em;
     border-radius: 3px;

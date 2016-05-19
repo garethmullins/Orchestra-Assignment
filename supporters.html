@@ -1,21 +1,22 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <!-- Begin head  -->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <title>Barrier Reef Orchestra: Supporters</title>
 
 <!-- Begin stylesheets -->
 <link rel="stylesheet" href="styles.css" /><style type="text/css"></style>
 <link rel="stylesheet" href="layout.css" /><style type="text/css"></style>
+<link rel="stylesheet" href="pure-min.css" />
 <!-- End stylesheets -->
 
 <!-- Begin scripts -->
-<script src="js/jquery-2.2.3.min.js"></script>
-<script src="js/jquery.validate.js"></script>
+<script src="js/jquery-2.2.3.min.js" type="text/javascript"></script>
+<script src="js/jquery.validate.js" type="text/javascript"></script>
 <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
 <!-- End scripts -->
 
@@ -26,17 +27,17 @@
 <body>
 
 <!-- Begin header -->
-	<header>
+	<div id="header">
     	<a href="index.html" id="logo"></a>
-    </header>
+    </div>
 <!-- End header -->
 
 <!-- Begin navigation bar -->
-<nav>
+<div id="nav">
 <span class="nav-btn"></span>
 <ul class="nav">
     <li><a href="index.html">Home</a></li>
-    <li><a class="has-sub">News&#x25BE</a>
+    <li><a class="has-sub">News&#x25BE;</a>
     	<ul>
             <li><a href="news.html">Upcoming Events</a></li>
             <li><a href="news.html#past_events">Past Events</a></li>
@@ -45,20 +46,20 @@
         </ul>
     </li>
     <li><a href="gallery.html">Gallery</a></li>
-    <li><a class="has-sub">Supporters&#x25BE</a>
+    <li><a class="has-sub">Supporters&#x25BE;</a>
         <ul>
             <li><a href="supporters.html#you_can_help">You Can Help</a></li>
             <li><a href="supporters.html#benefactors">Benefactors</a></li>
             <li><a href="supporters.html#sponsors">Sponsors</a></li>
         </ul>
     </li>
-    <li><a class="has-sub">People&#x25BE</a>
+    <li><a class="has-sub">People&#x25BE;</a>
         <ul>
             <li><a href="people.html#special_guests">Special Guests</a></li>
             <li><a href="people.html#life_members">Life Members</a></li>
         </ul>
     </li>
-    <li><a class="has-sub">About Us&#x25BE</a>
+    <li><a class="has-sub">About Us&#x25BE;</a>
         <ul>
             <li><a href="about.html#history">History</a></li>
             <li><a href="about.html#committee">Committee</a></li>
@@ -66,7 +67,7 @@
             <li><a href="about.html#repertoire">Repertoire</a></li>
         </ul>
     </li>
-    <li><a class="has-sub">Contact&#x25BE</a>
+    <li><a class="has-sub">Contact&#x25BE;</a>
     	<ul>
             <li><a href="contact.html">Contact Us!</a></li>
             <li><a href="membership.html">Membership</a></li>
@@ -74,8 +75,8 @@
     </li>
     <li class="ticketing"><a href="https://whatson.townsville.qld.gov.au/categories/ticketshop">Ticket Purchasing</a></li>
 </ul>
-</nav>
-<script>
+</div>
+<script type="text/javascript">
 $('.has-sub').click( function(e) {
     e.preventDefault();
     $(this).parent().toggleClass('tap');
@@ -93,7 +94,7 @@ $(window).resize(function () {
 
 <!-- Begin section one -->
 
-<div id="main">
+<div class="main">
 <span class="anchor" id="you_can_help"></span>
 <h1>You Can Help!</h1>
 <h2>Donate To Become A Benefactor or Corporate Sponsor</h2>
@@ -102,16 +103,13 @@ $(window).resize(function () {
 
 <div class="clear"></div>
 
-<div id="main">
+<div class="main">
 <!-- Begin Contact Form -->
-   <!-- <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css"> -->
-   <link rel="stylesheet" href="pure-min.css">
-
-  <form id="gform" method="POST" class="pure-form pure-form-stacked"
+  <form id="gform" method="post" class="pure-form pure-form-stacked"
   action="https://script.google.com/macros/s/AKfycbz976m2KpweSHxlbgS49HWPQbFvMZhVB0mVQqezhF5-oucTi3M/exec">
     <!-- change the form action to your script url -->
 
-<aside>
+<div class="aside">
     <fieldset class="pure-group">
       <label for="name">Your Full Name or Company Name:<br />
       (This is the name that will be placed on the Roll.)</label>
@@ -119,7 +117,7 @@ $(window).resize(function () {
     </fieldset>  
     
     <fieldset class="pure-group">
-    <table width="200">
+    <table>
       <tr>
         <td><label><input type="radio" name="anonymous_radio" value="Yes" id="anonymous_radio_0" required/>Remain anonymous</label></td>
         <td><label><input type="radio" name="anonymous_radio" value="No" id="anonymous_radio_1" required/>Publish my name</label></td>
@@ -130,7 +128,7 @@ $(window).resize(function () {
 <fieldset class="pure-group">
   <label for="email">Email Address:</label>
       <input id="email" name="email" type="email" value=""
-      required placeholder="your.name@email.com" required/>
+      required placeholder="your.name@email.com"/>
       <span id="email-invalid" style="visibility:hidden">
         Must be a valid email address</span>
   </fieldset>
@@ -139,8 +137,8 @@ $(window).resize(function () {
       <label for="phone">Contact Phone: </label>
       <input id="phone" name="phone" minlength="8" placeholder="Landline or Mobile" required/>
     </fieldset>
-</aside>    
-<article>    
+</div>
+<div class="article">    
     <fieldset class="pure-group">
       <label for="mail">Mailing Address: </label>
       <input id="mail" name="mail" placeholder="Where would you like paperwork sent?" required />
@@ -159,16 +157,16 @@ $(window).resize(function () {
 
     <button class="button-success pure-button button-xlarge">Send</button>
 <br />
-</article>
-  </form>
+</div>
+</form>
 </div>
 
 <div class="clear"></div>
 
-<div id="main">
+<div class="main">
 <!-- Begin Form Thank You Message -->
   <div style="display:none;" id="thankyou_message">
-  	<div id="block_text">
+  	<div class="block_text">
     <p>Thanks for your donation enquiry! We will get back to you soon for payment details!<br />
     <a href="javascript:history.go(0)">Click here to refresh the form</a></p>
     </div>
@@ -187,13 +185,13 @@ $(window).resize(function () {
 <!-- Begin section two -->
 
 <span class="anchor" id="benefactors"></span>
-<div id="main">
+<div class="main">
 <h1>Benefactors</h1>
 <p>Barrier Reef Orchestra relies on the kind support and much-needed donations from our wonderful benefactors. We would like to honour the following people for their continued support:</p>
 <h2>North Queensland Ensembles Inc <br />
 BARRIER REEF ORCHESTRA BENEFACTORS' ROLL </h2>
 <p>
-<table width="70%" border="0">
+</p><table>
   <tr>
     <td>Dr Kevin Arlett</td>
     <td>Carol Dall'Osto</td>
@@ -227,7 +225,7 @@ BARRIER REEF ORCHESTRA BENEFACTORS' ROLL </h2>
     <td>Graham Wheeler</td>
   </tr>
 </table>
-</p>
+<p></p>
 <p>With a philanthropic gift of $200 or more (we leave that up to you) you can become an Orchestra Benefactor and be placed on our Benefactors Roll for twelve months. This Roll will be published in each concert program and on our website for twelve months. As a benefactor you will also receive two complimentary tickets to our next concert, be placed on the mailing list for our newsletter and will be a guest at our annual Season's Lunch function. If you wish to support us please complete the form <a href="membership.html">here</a>.</p>
 
 </div>
@@ -237,12 +235,12 @@ BARRIER REEF ORCHESTRA BENEFACTORS' ROLL </h2>
 
 <!-- Begin section three -->
 
-<div id="main">
+<div class="main">
 <span class="anchor" id="sponsors"></span>
 <h1>Sponsors</h1>
 <p>Everyone involved with the Barrier Reef Orchestra would like to especially thank our corporate sponsors who help us with their continued support.</p>
 <p>
-<table width="100%" border="0">
+</p><table>
   <tr>
     <td><a href="http://www.acvc.com.au"><img src="images/sponsors/acvc_logo.png" alt="ACVC" /></a></td>
     <td><a href="http://www.afcm.com.au"><img src="images/sponsors/afcm_logo.png" alt="AFCM" /></a></td>
@@ -262,7 +260,7 @@ BARRIER REEF ORCHESTRA BENEFACTORS' ROLL </h2>
   <tr>
     <td><a href="http://www.racq.com.au"><img src="images/sponsors/racq_logo.png" alt="RACQ" /></a></td>
     <td><a href="http://rslnorthqueensland.com.au/sub-branches/townsville-rsl/"><img src="images/sponsors/rsl_logo.png" alt="Returned Services League Australia" /></a></td>
-    <td><a href="www.signsofexcellence.com.au/"><img src="images/sponsors/signs_of_excellence_logo.png" alt="Signs Of Excellence" /></a></td>
+    <td><a href="http://www.signsofexcellence.com.au/"><img src="images/sponsors/signs_of_excellence_logo.png" alt="Signs Of Excellence" /></a></td>
   </tr>
   <tr>
     <td><a href="http://www.sturtbc.com.au/"><img src="images/sponsors/sturt_business_centre_logo.png" alt="Sturt Business Centre" /></a></td>
@@ -271,33 +269,33 @@ BARRIER REEF ORCHESTRA BENEFACTORS' ROLL </h2>
   </tr>
 </table>
 
-</p>
+<p></p>
 </div>
 <!-- End section three -->
 
 <div class="clear"></div>
 
 <!-- Begin Footer -->
-<footer>
-    <section>
+<div class="footer">
+    <div class="section">
         <h3><b>Barrier Reef Orchestra</b></h3>
         <p>The Barrier Reef Orchestra is a product of North Queensland Ensembles Inc.<br/></p>
-    </section>
-    <section>
+    </div>
+    <div class="section">
         <h3>Connect With Us!</h3>
         <ul class="social">
             <li><a href="https://www.facebook.com/nqorchestra/"><img src="images/facebook.png" alt="Facebook" /></a></li> <!-- image obtained from https://www.iconfinder.com/Eggsplode -->
             <li><a href="mailto:brotownsville@gmail.com?subject=Website%20Enquiry"><img src="images/mail.png" alt="email" /></a></li> <!-- image obtained from https://www.iconfinder.com/Eggsplode -->
         </ul>
-    </section>
-    <section>
+    </div>
+    <div class="section">
         <p>Proudly Sponsored by</p>
         <a href="https://www.townsville.qld.gov.au/"><img src="images/tcc_logo.jpg" alt="Townsville City Council"/></a>
-    </section>
-</footer>
-<footer class="second">
-	<p><h5>&copy; CP1406 Team 2. Content used is for educational and training purposes only.</h5></p>
-</footer>
+    </div>
+</div>
+<div class="footer_second">
+	<p></p><h5>&copy; CP1406 Team 2. Content used is for educational and training purposes only.</h5><p></p>
+</div>
 <!-- End Footer -->
 
 </body>

@@ -7,35 +7,35 @@
 		position: absolute;
 		padding-top: 70px;
 	}
-	#bio_img {
+	.bio_img {
 		width: 100%;
 		text-align: center;
 	}
-	#bio_img2 {
-		width: 100%;
+	.bio_img2 {
+		width: 45%;
 		text-align: center;
 	}
-	section {
+	.section {
 		float: left;
 		width: 100%;
 		margin: 0;
 		padding: 0;
 	}
-	article {
-		float: left;
-		width: 100%;
-		margin: 0;
-		padding: 0;
-		text-align: center;
-	}
-	aside {
+	.article {
 		float: left;
 		width: 100%;
 		margin: 0;
 		padding: 0;
 		text-align: center;
 	}
-	header { 
+	.aside {
+		float: left;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+	#header { 
 		height: 70px;
 		position: fixed; 
 	}
@@ -102,22 +102,22 @@
 		position: absolute;
 		padding-top: 110px;
 	}
-	header {
+	#header {
 		position: fixed;
 	}
-	section {
+	.section {
 		float: left;
 		width: 100%;
 		margin: 0;
 		padding: 0;
 	}
-	article {
+	.article {
 		float: left;
 		width: 100%;
 		margin: 0;
 		padding: 0;
 	}
-	aside {
+	.aside {
 		float: left;
 		width: 100%;
 		margin: 0;
@@ -132,12 +132,16 @@
 	.nav { 
 		position: fixed;
 	}
+	.bio_img2 {
+		width: 21%;
+		text-align: center;
+	}
 }
 /* --- End tablet and medium screen layouts --- */
 
 /* --- Begin computer and large screen layouts --- */
 @media screen and (min-width: 700px) and (max-width: 2000px) {
-	header {
+	#header {
 		position: fixed;
 		height: 120px;
 	}
@@ -152,6 +156,10 @@
 	}
 	body {
 		padding-top: 120px;
+	}
+	.bio_img2 {
+		width: 21%;
+		text-align: center;
 	}
 }
 /* --- End computer and large screen layouts --- */

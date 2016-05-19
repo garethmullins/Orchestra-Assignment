@@ -1,22 +1,22 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <!-- Begin head  -->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <title>Barrier Reef Orchestra: Membership Form</title>
 
 <!-- Begin stylesheets -->
 <link rel="stylesheet" href="styles.css" /><style type="text/css"></style>
 <link rel="stylesheet" href="layout.css" /><style type="text/css"></style>
-<link rel="stylesheet" href="pure-min.css">
+<link rel="stylesheet" href="pure-min.css"/>
 <!-- End stylesheets -->
 
 <!-- Begin scripts -->
-<script src="js/jquery-2.2.3.min.js"></script>
-<script src="js/jquery.validate.js"></script>
+<script src="js/jquery-2.2.3.min.js" type="text/javascript"></script>
+<script src="js/jquery.validate.js" type="text/javascript"></script>
 <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
 <!-- End scripts -->
 
@@ -27,17 +27,17 @@
 <body>
 
 <!-- Begin header -->
-	<header>
+	<div id="header">
     	<a href="index.html" id="logo"></a>
-    </header>
+    </div>
 <!-- End header -->
 
 <!-- Begin navigation bar -->
-<nav>
+<div id="nav">
 <span class="nav-btn"></span>
 <ul class="nav">
     <li><a href="index.html">Home</a></li>
-    <li><a class="has-sub">News&#x25BE</a>
+    <li><a class="has-sub">News&#x25BE;</a>
     	<ul>
             <li><a href="news.html">Upcoming Events</a></li>
             <li><a href="news.html#past_events">Past Events</a></li>
@@ -46,20 +46,20 @@
         </ul>
     </li>
     <li><a href="gallery.html">Gallery</a></li>
-    <li><a class="has-sub">Supporters&#x25BE</a>
+    <li><a class="has-sub">Supporters&#x25BE;</a>
         <ul>
             <li><a href="supporters.html#you_can_help">You Can Help</a></li>
             <li><a href="supporters.html#benefactors">Benefactors</a></li>
             <li><a href="supporters.html#sponsors">Sponsors</a></li>
         </ul>
     </li>
-    <li><a class="has-sub">People&#x25BE</a>
+    <li><a class="has-sub">People&#x25BE;</a>
         <ul>
             <li><a href="people.html#special_guests">Special Guests</a></li>
             <li><a href="people.html#life_members">Life Members</a></li>
         </ul>
     </li>
-    <li><a class="has-sub">About Us&#x25BE</a>
+    <li><a class="has-sub">About Us&#x25BE;</a>
         <ul>
             <li><a href="about.html#history">History</a></li>
             <li><a href="about.html#committee">Committee</a></li>
@@ -67,7 +67,7 @@
             <li><a href="about.html#repertoire">Repertoire</a></li>
         </ul>
     </li>
-    <li><a class="has-sub">Contact&#x25BE</a>
+    <li><a class="has-sub">Contact&#x25BE;</a>
     	<ul>
             <li><a href="contact.html">Contact Us!</a></li>
             <li><a href="membership.html">Membership</a></li>
@@ -75,8 +75,8 @@
     </li>
     <li class="ticketing"><a href="https://whatson.townsville.qld.gov.au/categories/ticketshop">Ticket Purchasing</a></li>
 </ul>
-</nav>
-<script>
+</div>
+<script type="text/javascript">
 $('.has-sub').click( function(e) {
     e.preventDefault();
     $(this).parent().toggleClass('tap');
@@ -94,21 +94,21 @@ $(window).resize(function () {
 
 <!-- Begin section one -->
 
-<div id="main">
+<div class="main">
 
 <!-- Begin Contact Form -->
    
 <h1>Membership Application Form</h1>
 <p>If you'd like to become part of our orchestra family, please fill in the following form. (You will be contacted separately for payment)</p>
   
-<form id="gform" method="POST" class="pure-form pure-form-stacked"
+<form id="gform" method="post" class="pure-form pure-form-stacked"
 action="https://script.google.com/macros/s/AKfycbyuKMBrsFh3Xu0pKXarhCYPr6-CbNFCuOkaEdqHHa3GqL3i3g0/exec">
 <!-- change the form action to your script url -->
-<article>
+<div class="article">
     <img src="images/membership_prices.png" alt="Membership Fees: Adults $30, Full-Time Students, Children under 18 years and Concession Card holders $15, Family Memberships (2 adult and 3 children) $60" />
-    <h1></h1>
-</article>
-<aside>
+    <br>
+</div>
+<div class="aside">
     <fieldset class="pure-group">
         <label for="name">Applicant 1: </label>
         <input id="name" name="name" placeholder="Enter the name of Applicant 1" required/>
@@ -116,7 +116,7 @@ action="https://script.google.com/macros/s/AKfycbyuKMBrsFh3Xu0pKXarhCYPr6-CbNFCu
     
     <fieldset class="pure-group">
         <label for="email">Email Address:</label>
-        <input id="email" name="email" type="email" value="" required placeholder="your.name@email.com" required/><span id="email-invalid" style="visibility:hidden">Must be a valid email address</span>
+        <input id="email" name="email" type="email" value="" placeholder="your.name@email.com" required/><span id="email-invalid" style="visibility:hidden">Must be a valid email address</span>
     </fieldset>
     
     <fieldset class="pure-group">
@@ -130,7 +130,7 @@ action="https://script.google.com/macros/s/AKfycbyuKMBrsFh3Xu0pKXarhCYPr6-CbNFCu
     </fieldset>
     
     <fieldset class="pure-group">
-    <table width="200">
+    <table>
       <tr>
         <td><label><input type="radio" name="membership_radio" value="Adult" id="membership_radio_0" required/>Adult</label></td>
         <td><label><input type="radio" name="membership_radio" value="Student" id="membership_radio_1" required/>Student</label></td>
@@ -160,7 +160,7 @@ action="https://script.google.com/macros/s/AKfycbyuKMBrsFh3Xu0pKXarhCYPr6-CbNFCu
         <input id="name5" name="name5" placeholder="Enter the name of Child Applicant 3" />
     </fieldset>
     <fieldset class="pure-group">
-    <table width="200">
+    <table>
     <caption>
     I / We Would Like To Help:
   	</caption>
@@ -183,8 +183,8 @@ action="https://script.google.com/macros/s/AKfycbyuKMBrsFh3Xu0pKXarhCYPr6-CbNFCu
     </table>
     </fieldset>
     <br />
-</aside>
-<article>
+</div>
+<div class="article">
 	<fieldset class="pure-group">
       <label for="instrument">Instrument/s (Players only): </label>
       <textarea id="instrument" name="instrument" rows="2"
@@ -205,48 +205,47 @@ action="https://script.google.com/macros/s/AKfycbyuKMBrsFh3Xu0pKXarhCYPr6-CbNFCu
 	<br />
     <button class="button-success pure-button button-xlarge">Send</button>
 
-</article>
+</div>
 </form>
 
 <!-- Begin Form Thank You Message -->
 <div id="centered_div">
     <div style="display:none;" id="thankyou_message">
-        <div id="block_text">
+        <div class="block_text">
         <p>Thank you for your membership enquiry! We will get back to you soon for payment details!<br />
         <a href="javascript:history.go(0)">Click here to refresh the form</a></p>
         </div>
     </div>
 </div>
-</article>
+</div>
 <!-- End Form Thank You Message -->
 <!-- End Contact Form -->
 
-</div>
 <!-- End section one -->
 
 <div class="clear"></div>
 
 <!-- Begin Footer -->
-<footer>
-    <section>
+<div class="footer">
+    <div class="section">
         <h3><b>Barrier Reef Orchestra</b></h3>
         <p>The Barrier Reef Orchestra is a product of North Queensland Ensembles Inc.<br/></p>
-    </section>
-    <section>
+    </div>
+    <div class="section">
         <h3>Connect With Us!</h3>
         <ul class="social">
             <li><a href="https://www.facebook.com/nqorchestra/"><img src="images/facebook.png" alt="Facebook" /></a></li> <!-- image obtained from https://www.iconfinder.com/Eggsplode -->
             <li><a href="mailto:brotownsville@gmail.com?subject=Website%20Enquiry"><img src="images/mail.png" alt="email" /></a></li> <!-- image obtained from https://www.iconfinder.com/Eggsplode -->
         </ul>
-    </section>
-    <section>
+    </div>
+    <div class="section">
         <p>Proudly Sponsored by</p>
         <a href="https://www.townsville.qld.gov.au/"><img src="images/tcc_logo.jpg" alt="Townsville City Council"/></a>
-    </section>
-</footer>
-<footer class="second">
-	<p><h5>&copy; CP1406 Team 2. Content used is for educational and training purposes only.</h5></p>
-</footer>
+    </div>
+</div>
+<div class="footer_second">
+	<h5>&copy; CP1406 Team 2. Content used is for educational and training purposes only.</h5>
+</div>
 <!-- End Footer -->
 
 </body>
