@@ -11,7 +11,7 @@ Copyright (c) Nicolas Gallagher and Jonathan Neal
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 
 button, input, optgroup, select, textarea {
-	color: inherit;
+	color: #2c2d2b;
 	font: inherit;
 	margin: 0
 }

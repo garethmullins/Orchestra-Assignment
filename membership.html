@@ -160,27 +160,20 @@ action="https://script.google.com/macros/s/AKfycbyuKMBrsFh3Xu0pKXarhCYPr6-CbNFCu
         <input id="name5" name="name5" placeholder="Enter the name of Child Applicant 3" />
     </fieldset>
     <fieldset class="pure-group">
-    <table>
     <caption>
-    I / We Would Like To Help:
+    I / We Would Like To Help As:
   	</caption>
-      <tr>
-        <td><label><input type="radio" name="signup_radio" value="player" id="signup_radio_0" required/>As A Player</label></td>
-        <td><label><input type="radio" name="signup_radio" value="management" id="signup_radio_1" required/>Management / Administration</label></td>
-        </tr>
-        <tr>
-        <td><label><input type="radio" name="signup_radio" value="player_support" id="signup_radio_2" required/>Player Support</label></td>
-        <td><label><input type="radio" name="signup_radio" value="fundraising" id="signup_radio_3" required/>Fundraising</label></td>
-        </tr>
-        <tr>
-        <td><label><input type="radio" name="signup_radio" value="marketing" id="signup_radio_4" required/>Marketing / Promotions</label></td>
-        <td><label><input type="radio" name="signup_radio" value="sponsorship" id="signup_radio_5" required/>Sponsorship</label></td>
-        </tr>
-        <tr>
-        <td><label><input type="radio" name="signup_radio" value="publishing" id="signup_radio_6" required/>Desktop Publishing</label></td>
-        <td><label><input type="radio" name="signup_radio" value="publishing" id="signup_radio_7" required/>Other / Multiple</label></td>
-      </tr>
-    </table>
+        <select name="signup_radio" required>
+            <option value="">- - - Select An Option - - -</option>
+            <option value="player">A Player</option>
+            <option value="management">Management / Administration</option>
+            <option value="player_support">Player Support</option>
+            <option value="fundraising">Fundraising</option>
+            <option value="marketing">Marketing / Promotions</option>
+            <option value="sponsorship">A Sponsor</option>
+            <option value="publising">Desktop Publishing</option>
+            <option value="other">Other / Multiple</option>
+        </select>
     </fieldset>
     <br />
 </div>
