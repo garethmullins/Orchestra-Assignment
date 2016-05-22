@@ -246,6 +246,26 @@ action="https://script.google.com/macros/s/AKfycbyuKMBrsFh3Xu0pKXarhCYPr6-CbNFCu
 	<h5>&copy; CP1406 Team 2. Content used is for educational and training purposes only.</h5>
 </div>
 <!-- End Footer -->
+<a href="#" class="back-to-top">Back to Top</a>
+<script>
+	$(document).ready(function() {
+		// Show or hide the sticky footer button
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > 200) {
+				$('.back-to-top').fadeIn(200);
+			} else {
+				$('.back-to-top').fadeOut(200);
+			}
+		});
+		
+		// Animate the scroll to top
+		$('.back-to-top').click(function(event) {
+			event.preventDefault();
+			
+			$('html, body').animate({scrollTop: 0}, 300)
+		})
+	});
+</script>
 
 </body>
 <!-- End body -->
