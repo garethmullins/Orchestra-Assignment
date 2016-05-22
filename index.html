@@ -5,13 +5,15 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
 <title>Barrier Reef Orchestra: Home</title>
 
 <!-- Begin stylesheets -->
-<link rel="stylesheet" href="js/blueberry.css" /><style type="text/css"></style>
-<link rel="stylesheet" href="styles.css" /><style type="text/css"></style>
-<link rel="stylesheet" href="layout.css" /><style type="text/css"></style>
+<link rel="stylesheet" href="js/blueberry.css" />
+<style type="text/css"></style>
+<link rel="stylesheet" href="styles.css" />
+<style type="text/css"></style>
+<link rel="stylesheet" href="layout.css" />
+<style type="text/css"></style>
 <!-- End stylesheets -->
 
 <!-- Begin scripts -->
@@ -31,54 +33,46 @@ $(window).load(function() {
 <body>
 
 <!-- Begin header -->
-	<div id="header">
-    	<a href="#" id="logo"></a>
-    </div>
-<!-- End header -->
+<div id="header"> <a href="#" id="logo"></a> </div>
+<!-- End header --> 
 
 <!-- Begin navigation bar -->
-<div id="nav">
-<span class="nav-btn"></span>
-<ul class="nav">
+<div id="nav"> <span class="nav-btn"></span>
+  <ul class="nav">
     <li><a href="index.html">Home</a></li>
+    <li><a href="https://whatson.townsville.qld.gov.au/categories/ticketshop" target="_blank">Buy Tickets</a></li>
     <li><a class="has-sub">News&#x25BE;</a>
-    	<ul>
-            <li><a href="news.html">Upcoming Events</a></li>
-            <li><a href="news.html#past_events">Past Events</a></li>
-            <li><a href="news.html#presidents_report">President's Report</a></li>
-            <li><a href="news.html#newsletters">Newsletters</a></li>
-        </ul>
+      <ul>
+        <li><a href="news.html">Upcoming Events</a></li>
+        <li><a href="news.html#past_events">Past Events</a></li>
+        <li><a href="news.html#presidents_report">President's Report</a></li>
+        <li><a href="news.html#newsletters">Newsletters</a></li>
+      </ul>
+    </li>
+    <li><a class="has-sub">Support&#x25BE;</a>
+      <ul>
+        <li><a href="supporters.html#you_can_help">Become A Donor</a></li>
+        <li><a href="supporters.html#benefactors">Our Benefactors</a></li>
+        <li><a href="supporters.html#sponsors">Our Sponsors</a></li>
+        <li><a href="membership.html">Join Our Orchestra</a></li>
+      </ul>
+    </li>
+    <li><a class="has-sub">About&#x25BE;</a>
+      <ul>
+        <li><a href="people.html#special_guests">Special Guests</a></li>
+        <li><a href="people.html#life_members">Life Members</a></li>
+        <li><a href="about.html#history">History</a></li>
+        <li><a href="about.html#committee">Committee</a></li>
+        <li><a href="about.html#rules">Rules</a></li>
+        <li><a href="about.html#repertoire">Repertoire</a></li>
+      </ul>
     </li>
     <li><a href="gallery.html">Gallery</a></li>
-    <li><a class="has-sub">Supporters&#x25BE;</a>
-        <ul>
-            <li><a href="supporters.html#you_can_help">You Can Help</a></li>
-            <li><a href="supporters.html#benefactors">Benefactors</a></li>
-            <li><a href="supporters.html#sponsors">Sponsors</a></li>
-        </ul>
+    <li><a href="contact.html">Contact</a></li>
+    <li>
+      <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div>
     </li>
-    <li><a class="has-sub">People&#x25BE;</a>
-        <ul>
-            <li><a href="people.html#special_guests">Special Guests</a></li>
-            <li><a href="people.html#life_members">Life Members</a></li>
-        </ul>
-    </li>
-    <li><a class="has-sub">About Us&#x25BE;</a>
-        <ul>
-            <li><a href="about.html#history">History</a></li>
-            <li><a href="about.html#committee">Committee</a></li>
-            <li><a href="about.html#rules">Rules</a></li>
-            <li><a href="about.html#repertoire">Repertoire</a></li>
-        </ul>
-    </li>
-    <li><a class="has-sub">Contact&#x25BE;</a>
-    	<ul>
-            <li><a href="contact.html">Contact Us!</a></li>
-            <li><a href="membership.html">Membership</a></li>
-        </ul>
-    </li>
-    <li class="ticketing"><a href="https://whatson.townsville.qld.gov.au/categories/ticketshop">Ticket Purchasing</a></li>
-</ul>
+  </ul>
 </div>
 <script type="text/javascript">
 $('.has-sub').click( function(e) {
@@ -94,129 +88,159 @@ $(window).resize(function () {
 	}
 });
 </script>
-<!-- End navigation bar -->
+
+<!-- Begin Facebook js code -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- End Facebook js code --> 
+
+<!-- End navigation bar --> 
 
 <!-- Begin slider -->
 <div id="doc">
-    <div id="content">
-        <div class="blueberry">
-            <ul class="slides">
-                <li><a href="https://whatson.townsville.qld.gov.au/categories/ticketshop" target="_blank"><img src="images/slider6.jpg" alt="Twilight Classics Advertisement" /></a></li>
-                <li><img src="images/slider2.jpg" alt="Image of orchestra conductor"/></li>
-                <li><a href="supporters.html"><img src="images/slider7.jpg" alt="Thank You For Your Support"/></a></li>
-                <li><img src="images/slider4.jpg" alt="Image of orchestra" /></li>
-                <li><a href="news.html"><img src="images/slider5.jpg" alt="Introducing Bronwynn Douglass"/></a></li>
-            </ul>
-        </div>                
+  <div id="content">
+    <div class="blueberry">
+      <ul class="slides">
+        <li><a href="https://whatson.townsville.qld.gov.au/categories/ticketshop" target="_blank"><img src="images/slider6.jpg" alt="Twilight Classics Advertisement" /></a></li>
+        <li><img src="images/slider2.jpg" alt="Image of orchestra conductor"/></li>
+        <li><a href="supporters.html"><img src="images/slider7.jpg" alt="Thank You For Your Support"/></a></li>
+        <li><img src="images/slider4.jpg" alt="Image of orchestra" /></li>
+        <li><a href="news.html"><img src="images/slider5.jpg" alt="Introducing Bronwynn Douglass"/></a></li>
+      </ul>
     </div>
+  </div>
 </div>
 <!-- End slider -->
-
 <div class="main">
-<p>Fast becoming one of North Queensland’s cultural jewels, the Barrier Reef Orchestra this year launches its 16th year of performing orchestral music throughout North Queensland. Our community orchestra consists of skilled musicians of all ages and professions, from as far afield as Cairns and Mackay looking to partake in musical excellence.</p>
+  <p>Fast becoming one of North Queensland’s cultural jewels, the Barrier Reef Orchestra this year launches its 16th year of performing orchestral music throughout North Queensland. Our community orchestra consists of skilled musicians of all ages and professions, from as far afield as Cairns and Mackay looking to partake in musical excellence.</p>
 </div>
 
 <!-- Begin first section -->
-<div class="section">
-    <img src="images/harp.png" alt="Harp" /> <!-- image obtained from https://www.iconfinder.com/Eggsplode -->
-    <h2>Support Us</h2>
-    <p>Barrier Reef Orchestra relies on the financial support of Townsville <a href="supporters.html#benefactors">locals</a> and <a href="supporters.html#sponsors">businesses</a> in order to bring our beautiful music to the masses. Find out how to <a href="supporters.html">support us here...</a></p>
+<div class="section"> <img src="images/harp.png" alt="Harp" /> <!-- image obtained from https://www.iconfinder.com/Eggsplode -->
+  <h2>Support Us</h2>
+  <p>Barrier Reef Orchestra relies on the financial support of Townsville <a href="supporters.html#benefactors">locals</a> and <a href="supporters.html#sponsors">businesses</a> in order to bring our beautiful music to the masses. Find out how to <a href="supporters.html">support us here...</a></p>
 </div>
-<div class="section">
-    <img src="images/cymbals.png" alt="Cymbals" /> <!-- image obtained from https://www.iconfinder.com/Eggsplode -->
-    <h2>Sign Up</h2>
-    <p>Use our forms to <a href="contact.html">get in contact</a> or <a href="membership.html">become a member of our orchestra.</a></p>
+<div class="section"> <img src="images/cymbals.png" alt="Cymbals" /> <!-- image obtained from https://www.iconfinder.com/Eggsplode -->
+  <h2>Sign Up</h2>
+  <p>Use our forms to <a href="contact.html">get in contact</a> or <a href="membership.html">become a member of our orchestra.</a></p>
 </div>
-<div class="section">
-    <img src="images/horn.png" alt="Horn" /> <!-- image obtained from https://www.iconfinder.com/Eggsplode -->
-    <h2>News</h2>
-    <p>With us, there's always something exciting happening! <a href="news.html">Get the latest here...</a></p>
+<div class="section"> <img src="images/horn.png" alt="Horn" /> <!-- image obtained from https://www.iconfinder.com/Eggsplode -->
+  <h2>News</h2>
+  <p>With us, there's always something exciting happening! <a href="news.html">Get the latest here...</a></p>
 </div>
 <!-- End first section -->
 
 <div class="clear"></div>
 
 <!-- Begin second section -->
-<div class="main">
-<!-- Begin Facebook js code -->
-<div id="fb-root"></div>
-<script type="text/javascript">
-(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.6";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-</script>
-<!-- End Facebook js code -->
-<div class="aside">
+<div class="main"> 
+ <div class="aside">
     <div class="fb-page" data-href="https://www.facebook.com/nqorchestra/" data-tabs="timeline" data-width="478" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-        <div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/nqorchestra/">
-        <a href="https://www.facebook.com/nqorchestra/">Barrier Reef Orchestra</a></blockquote>
-        </div>
+      <div class="fb-xfbml-parse-ignore">
+        <blockquote cite="https://www.facebook.com/nqorchestra/"> <a href="https://www.facebook.com/nqorchestra/">Barrier Reef Orchestra</a></blockquote>
+      </div>
     </div>
-</div>
-<div class="article">
+  </div>
+  <div class="article">
     <h1>Upcoming Events</h1>
-        <ul class="events">
-            <li><h4>Twilight Classics - July 17, 2016</h4></li>
-            <li></li>
-            <li><h4>AFCM Queens Gardens Concert - July 31, 2016</h4></li>
-            <li></li>
-            <li><h4>Barrier Reef Orchestra Goes To The Opera: Townsville - October 22, 2016</h4></li>
-            <li></li>
-            <li><h4>Barrier Reef Orchestra Goes To The Opera: Ingham - October 30, 2016</h4></li>
-            <li></li>
-            <li><div class="block_text"><h4><a href="https://whatson.townsville.qld.gov.au/categories/ticketshop">Buy tickets to our events here.</a></h4></div></li>
-        </ul>
-</div>
+    <ul class="events">
+      <li>
+        <h4>Twilight Classics - July 17, 2016</h4>
+      </li>
+      <li></li>
+      <li>
+        <h4>AFCM Queens Gardens Concert - July 31, 2016</h4>
+      </li>
+      <li></li>
+      <li>
+        <h4>Barrier Reef Orchestra Goes To The Opera: Townsville - October 22, 2016</h4>
+      </li>
+      <li></li>
+      <li>
+        <h4>Barrier Reef Orchestra Goes To The Opera: Ingham - October 30, 2016</h4>
+      </li>
+      <li></li>
+      <li>
+        <div class="block_text">
+          <h4><a href="https://whatson.townsville.qld.gov.au/categories/ticketshop">Buy tickets to our events here.</a></h4>
+        </div>
+      </li>
+    </ul>
+  </div>
 </div>
 <!-- End second section -->
 
 <div class="clear"></div>
 
-<!-- Begin third section -->    	
+<!-- Begin third section -->
 <div class="section">
-    <h2>Gallery</h2>
-    <img src="images/violin.png" alt="Violin" /> <!-- image obtained from https://www.iconfinder.com/Eggsplode -->
-    <p>Peruse our gallery of images from events <a href="gallery.html">here.</a> We'd also love to see your photos - get in touch <a href="contact.html">here.</a></p>
+  <h2>Gallery</h2>
+  <img src="images/violin.png" alt="Violin" /> <!-- image obtained from https://www.iconfinder.com/Eggsplode -->
+  <p>Peruse our gallery of images from events <a href="gallery.html">here.</a> We'd also love to see your photos - get in touch <a href="contact.html">here.</a></p>
 </div>
 <div class="section">
-    <h2>People</h2>
-    <img src="images/maracas.png" alt="Maracas" /> <!-- image obtained from https://www.iconfinder.com/Eggsplode -->
-    <p>Discover the stories of our unique musicians and conductors <a href="people.html">here.</a></p>
+  <h2>People</h2>
+  <img src="images/maracas.png" alt="Maracas" /> <!-- image obtained from https://www.iconfinder.com/Eggsplode -->
+  <p>Discover the stories of our unique musicians and conductors <a href="people.html">here.</a></p>
 </div>
 <div class="section">
-    <h2>About Us</h2>
-    <img src="images/metronome.png" alt="Metronome" /> <!-- image obtained from https://www.iconfinder.com/Eggsplode -->
-    <p>It takes a lot of work to become an orchestra. <a href="about.html">Click here</a> to read why.</p>
+  <h2>About Us</h2>
+  <img src="images/metronome.png" alt="Metronome" /> <!-- image obtained from https://www.iconfinder.com/Eggsplode -->
+  <p>It takes a lot of work to become an orchestra. <a href="about.html">Click here</a> to read why.</p>
 </div>
-<!-- End third section -->
+<!-- End third section --> 
 
 <!-- Begin Footer -->
 <div class="footer">
-    <div class="section">
-        <h3><b>Barrier Reef Orchestra</b></h3>
-        <p>The Barrier Reef Orchestra is a product of North Queensland Ensembles Inc.<br/></p>
-    </div>
-    <div class="section">
-        <h3>Connect With Us!</h3>
-        <ul class="social">
-            <li><a href="https://www.facebook.com/nqorchestra/"><img src="images/facebook.png" alt="Facebook" /></a></li> <!-- image obtained from https://www.iconfinder.com/Eggsplode -->
-            <li><a href="mailto:brotownsville@gmail.com?subject=Website%20Enquiry"><img src="images/mail.png" alt="email" /></a></li> <!-- image obtained from https://www.iconfinder.com/Eggsplode -->
-        </ul>
-    </div>
-    <div class="section">
-        <p>Proudly Sponsored by</p>
-        <a href="https://www.townsville.qld.gov.au/"><img src="images/tcc_logo.jpg" alt="Townsville City Council"/></a>
-    </div>
+  <div class="section">
+    <h3><b>Barrier Reef Orchestra</b></h3>
+    <p>The Barrier Reef Orchestra is a product of North Queensland Ensembles Inc.<br/>
+    </p>
+  </div>
+  <div class="section">
+    <h3>Connect With Us!</h3>
+    <ul class="social">
+      <li><a href="https://www.facebook.com/nqorchestra/"><img src="images/facebook.png" alt="Facebook" /></a></li>
+      <!-- image obtained from https://www.iconfinder.com/Eggsplode -->
+      <li><a href="mailto:brotownsville@gmail.com?subject=Website%20Enquiry"><img src="images/mail.png" alt="email" /></a></li>
+      <!-- image obtained from https://www.iconfinder.com/Eggsplode -->
+    </ul>
+  </div>
+  <div class="section">
+    <p>Proudly Sponsored by</p>
+    <a href="https://www.townsville.qld.gov.au/"><img src="images/tcc_logo.jpg" alt="Townsville City Council"/></a> </div>
 </div>
 <div class="footer_second">
-	<h5>&copy; CP1406 Team 2. Content used is for educational and training purposes only.</h5>
-</div>
-<!-- End Footer -->
+  <h5>&copy; CP1406 Team 2. Content used is for educational and training purposes only.</h5>
 
+</div>
+<!-- End Footer --> 
+<a href="#" class="back-to-top">Back to Top</a>
+<script>
+	$(document).ready(function() {
+		// Show or hide the sticky footer button
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > 200) {
+				$('.back-to-top').fadeIn(200);
+			} else {
+				$('.back-to-top').fadeOut(200);
+			}
+		});
+		
+		// Animate the scroll to top
+		$('.back-to-top').click(function(event) {
+			event.preventDefault();
+			
+			$('html, body').animate({scrollTop: 0}, 300)
+		})
+	});
+</script>
 </body>
 <!-- End body -->
 

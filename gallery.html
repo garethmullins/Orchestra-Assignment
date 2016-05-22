@@ -31,48 +31,42 @@
 <!-- End header -->
 
 <!-- Begin navigation bar -->
-<div id="nav">
-<span class="nav-btn"></span>
-<ul class="nav">
+<div id="nav"> <span class="nav-btn"></span>
+  <ul class="nav">
     <li><a href="index.html">Home</a></li>
+    <li><a href="https://whatson.townsville.qld.gov.au/categories/ticketshop" target="_blank">Buy Tickets</a></li>
     <li><a class="has-sub">News&#x25BE;</a>
-    	<ul>
-            <li><a href="news.html">Upcoming Events</a></li>
-            <li><a href="news.html#past_events">Past Events</a></li>
-            <li><a href="news.html#presidents_report">President's Report</a></li>
-            <li><a href="news.html#newsletters">Newsletters</a></li>
-        </ul>
+      <ul>
+        <li><a href="news.html">Upcoming Events</a></li>
+        <li><a href="news.html#past_events">Past Events</a></li>
+        <li><a href="news.html#presidents_report">President's Report</a></li>
+        <li><a href="news.html#newsletters">Newsletters</a></li>
+      </ul>
+    </li>
+    <li><a class="has-sub">Support&#x25BE;</a>
+      <ul>
+        <li><a href="supporters.html#you_can_help">Become A Donor</a></li>
+        <li><a href="supporters.html#benefactors">Our Benefactors</a></li>
+        <li><a href="supporters.html#sponsors">Our Sponsors</a></li>
+        <li><a href="membership.html">Join Our Orchestra</a></li>
+      </ul>
+    </li>
+    <li><a class="has-sub">About&#x25BE;</a>
+      <ul>
+        <li><a href="people.html#special_guests">Special Guests</a></li>
+        <li><a href="people.html#life_members">Life Members</a></li>
+        <li><a href="about.html#history">History</a></li>
+        <li><a href="about.html#committee">Committee</a></li>
+        <li><a href="about.html#rules">Rules</a></li>
+        <li><a href="about.html#repertoire">Repertoire</a></li>
+      </ul>
     </li>
     <li><a href="gallery.html">Gallery</a></li>
-    <li><a class="has-sub">Supporters&#x25BE;</a>
-        <ul>
-            <li><a href="supporters.html#you_can_help">You Can Help</a></li>
-            <li><a href="supporters.html#benefactors">Benefactors</a></li>
-            <li><a href="supporters.html#sponsors">Sponsors</a></li>
-        </ul>
+    <li><a href="contact.html">Contact</a></li>
+    <li>
+      <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div>
     </li>
-    <li><a class="has-sub">People&#x25BE;</a>
-        <ul>
-            <li><a href="people.html#special_guests">Special Guests</a></li>
-            <li><a href="people.html#life_members">Life Members</a></li>
-        </ul>
-    </li>
-    <li><a class="has-sub">About Us&#x25BE;</a>
-        <ul>
-            <li><a href="about.html#history">History</a></li>
-            <li><a href="about.html#committee">Committee</a></li>
-            <li><a href="about.html#rules">Rules</a></li>
-            <li><a href="about.html#repertoire">Repertoire</a></li>
-        </ul>
-    </li>
-    <li><a class="has-sub">Contact&#x25BE;</a>
-    	<ul>
-            <li><a href="contact.html">Contact Us!</a></li>
-            <li><a href="membership.html">Membership</a></li>
-        </ul>
-    </li>
-    <li class="ticketing"><a href="https://whatson.townsville.qld.gov.au/categories/ticketshop">Ticket Purchasing</a></li>
-</ul>
+  </ul>
 </div>
 <script type="text/javascript">
 $('.has-sub').click( function(e) {
@@ -88,6 +82,18 @@ $(window).resize(function () {
 	}
 });
 </script>
+
+<!-- Begin Facebook js code -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- End Facebook js code --> 
+ 
 <!-- End navigation bar -->
 
 <!-- Begin section one -->
