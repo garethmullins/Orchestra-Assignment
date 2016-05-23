@@ -169,10 +169,11 @@ input, select {
 	max-width: 800px;
 	margin-top: 30px;
 }
-#centered_div {
+.centered_div {
 	width: 90%;
 	text-align: center;
 	margin: 10px auto;
+	max-width: 900px;
 }
 .clear {
 	clear: both;
